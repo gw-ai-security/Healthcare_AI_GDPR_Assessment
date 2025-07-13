@@ -169,6 +169,6 @@ This project is licensed under the MIT License – see LICENSE for details.
 
 ## 📌 Author
 
-**[Your Name / Your Consulting Brand]**
+**[Georg Wiesmüller]**
 
 For questions, improvements or collaborations → feel free to open an Issue or Pull Request!
