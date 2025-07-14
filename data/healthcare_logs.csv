@@ -1,0 +1,4 @@
+UserID,Timestamp,DiagnosisCode,Country,ConsentStatus
+U001,2024-01-01T12:00:00Z,C50.9,DE,true
+U002,2024-01-02T14:00:00Z,C50.9,US,false
+U003,2024-01-03T16:00:00Z,C50.9,DE,true
