@@ -6,12 +6,19 @@ This diagram illustrates the **data flow** in a typical Healthcare AI system, hi
 
 ```mermaid
 flowchart TD
-    User[User / Patient] -->|Submit Data| AI_Frontend
-    AI_Frontend --> ConsentCheck[Consent Verification]
-    ConsentCheck --> AI_Model[AI Model / Inference]
-    AI_Model --> EncryptedStorage[Encrypted Storage]
-    EncryptedStorage --> SIEM[SIEM Logging]
-    SIEM --> ExternalTransfer[External Transfer (EU/Non-EU)]
-    
-    ExternalTransfer --> ExternalAPIs[Third-Party / Cloud APIs]
+    User -->|Submit Data| AI_Frontend
+    AI_Frontend --> ConsentCheck
+    ConsentCheck --> AI_Model
+    AI_Model --> EncryptedStorage
+    EncryptedStorage --> SIEM
+    SIEM --> ExternalTransfer
+    ExternalTransfer --> ExternalAPIs
 
+    %% Labels
+    AI_Frontend[AI Frontend]
+    ConsentCheck[Consent Verification]
+    AI_Model[AI Model / Inference]
+    EncryptedStorage[Encrypted Storage]
+    SIEM[SIEM Logging]
+    ExternalTransfer[External Transfer (EU/Non-EU)]
+    ExternalAPIs[Third-Party / Cloud APIs]
