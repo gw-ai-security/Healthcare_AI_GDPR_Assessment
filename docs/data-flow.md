@@ -14,7 +14,7 @@ flowchart TD
     SIEM_Logging --> External_Transfer
     External_Transfer --> External_APIs
 
-
+```
 ## ✅ Node Legend
 
 | Node              | Description                             |
