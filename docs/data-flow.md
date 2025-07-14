@@ -13,3 +13,17 @@ flowchart TD
     Encrypted_Storage --> SIEM_Logging
     SIEM_Logging --> External_Transfer
     External_Transfer --> External_APIs
+
+
+## ✅ Node Legend
+
+| Node              | Description                             |
+|--------------------|-----------------------------------------|
+| User               | Patient / Healthcare Provider          |
+| AI_Frontend        | Web/App Interface                      |
+| Consent_Check      | Verification of documented consent     |
+| AI_Model           | Diagnostic / Inference Engine          |
+| Encrypted_Storage  | Secure Storage of Sensitive Data       |
+| SIEM_Logging       | Security Monitoring and Evidence       |
+| External_Transfer  | Cross-Border / Non-EU Data Sharing     |
+| External_APIs      | Third-Party Integrations / Cloud APIs  |
