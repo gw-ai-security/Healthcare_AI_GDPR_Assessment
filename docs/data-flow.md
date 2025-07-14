@@ -22,3 +22,5 @@ flowchart TD
     SIEM[SIEM Logging]
     ExternalTransfer[External Transfer (EU/Non-EU)]
     ExternalAPIs[Third-Party / Cloud APIs]
+
+```
