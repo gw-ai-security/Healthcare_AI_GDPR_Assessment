@@ -14,7 +14,8 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 - **GDPR Mapping:** Article 44 (Transfers to third countries)
 - **AI Act Mapping:** High-Risk System Logging Requirement
 - **HIPAA Mapping:** Transmission Security
-- **Business Impact:** Avoid fines up to €20 million; demonstrate cross-border compliance.
+- **Business Impact:** Avoid GDPR fines up to €20 million (Art. 44). Estimated cost savings ~€500,000 in legal fees, audit readiness, and cross-border compliance mitigation.
+
 
 ---
 
@@ -28,7 +29,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 - **GDPR Mapping:** Article 32 (Security of processing)
 - **AI Act Mapping:** Risk Management Measures
 - **HIPAA Mapping:** Encryption/Decryption Controls
-- **Business Impact:** Prevent data breach penalties; secure patient trust.
+- **Business Impact:** Prevent data breach penalties (Art. 32), up to €10 million fines. Estimated cost savings ~€300,000 through proactive encryption monitoring and breach response reduction.
 
 ---
 
@@ -42,7 +43,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 - **GDPR Mapping:** Article 5 (Integrity), Article 25 (Privacy by Design)
 - **AI Act Mapping:** High-Risk System Security
 - **HIPAA Mapping:** Integrity Controls
-- **Business Impact:** Avoid compromised diagnoses and reputational loss.
+- **Business Impact:** Avoid compromised diagnoses and reputational loss. Estimated mitigation value ~€200,000 in incident response and regulatory investigations.
 
 ---
 
@@ -56,7 +57,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 - **GDPR Mapping:** Article 32 (Access control)
 - **AI Act Mapping:** Logging / Oversight
 - **HIPAA Mapping:** Access Control Standard
-- **Business Impact:** Avoid breach notifications, protect patient privacy.
+- **Business Impact:** Avoid breach notifications and fines up to €20 million (Art. 32). Estimated cost savings ~€400,000 in legal penalties and patient trust protection.
 
 ---
 
@@ -70,7 +71,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 - **GDPR Mapping:** Article 5(1)(c) (Data Minimization)
 - **AI Act Mapping:** Risk Management
 - **HIPAA Mapping:** Minimum Necessary Standard
-- **Business Impact:** Avoid overcollection risks and audit failures.
+- **Business Impact:** Ensure compliance with GDPR Art. 5(1)(c). Estimated savings ~€150,000 in audit remediation costs and overcollection penalties.
 
 ---
 
@@ -84,7 +85,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 - **GDPR Mapping:** Article 6, 9 (Lawfulness of Processing)
 - **AI Act Mapping:** Logging of High-Risk Processing
 - **HIPAA Mapping:** Authorization Requirements
-- **Business Impact:** Ensure legal processing basis, avoid fines.
+- **Business Impact:** Avoid processing without legal basis (Art. 6, 9). Estimated cost savings ~€250,000 in fines, legal reviews, and reputational damage.
 
 ---
 
@@ -98,9 +99,9 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 - **GDPR Mapping:** Article 32
 - **AI Act Mapping:** Risk Management, Security by Design
 - **HIPAA Mapping:** Transmission Security, Integrity
-- **Business Impact:** Prevent data leaks, protect brand.
+- **Business Impact:** Prevent data leaks and fines (Art. 32). Estimated cost savings ~€200,000 in breach response, brand protection, and regulator fines.
 
 ---
 
-*Version 1.0 – Georg Wiesmüller*
+*Version 1.1 – Georg Wiesmüller*
 
