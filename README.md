@@ -1,174 +1,157 @@
 # Healthcare AI GDPR Compliance Assessment
 
-_A professional, consulting-ready framework for auditing and ensuring GDPR compliance in healthcare AI systems._
+_A consulting-ready framework to audit and ensure GDPR compliance for AI systems in healthcare._
 
 ---
 
 ## 🎯 Project Goal
 
-This repository provides a **complete, reusable, audit-ready framework** for assessing GDPR compliance of AI systems in the healthcare sector.  
+Deliver a **complete, audit-ready framework** simulating a real consulting engagement for healthcare AI systems:
 
-It simulates a real-world consulting engagement: analyzing data processing logs, mapping GDPR requirements, designing detection rules for SIEM, conducting risk assessments, and producing executive-level reports.
+- Analyzing data processing logs
+- Mapping GDPR requirements
+- Designing SIEM detection rules
+- Conducting DSFA and risk assessments
+- Producing executive-ready audit reports
 
 ---
 
-## 📌 Why This Matters
+## 📌 Why It Matters
 
-Healthcare AI systems process **special category data** under GDPR (Article 9), requiring:
-
-- Strict purpose limitation
+Healthcare AI systems process **special category data** (GDPR Art. 9) requiring:
 - Explicit, verifiable consent
-- Secure processing with encryption/pseudonymization
-- Demonstrable compliance with Privacy by Design (Article 25)
+- Purpose limitation
+- Secure processing and encryption
+- Privacy by Design (Art. 25)
 
-Non-compliance risks **fines of up to €20 million or 4% of annual turnover**.
-
----
-
-## ✅ Value Proposition
-
-This framework is designed for:
-
-- **Security Architects** who need audit-ready SIEM rules and threat models
-- **Data Protection Officers (DPOs)** ensuring GDPR compliance
-- **AI Product Managers** prioritizing privacy-by-design features
-- **Consultants** delivering client-ready assessments
+**Non-compliance = up to €20 million or 4% of turnover.**
 
 ---
 
-## 🚀 What You Get
+## ✅ What This Framework Provides
 
-✔️ Reusable templates and checklists  
-✔️ Data analysis notebooks (Jupyter)  
-✔️ GDPR field mappings and detection rules  
-✔️ Risk assessment and DSFA outlines  
-✔️ Ethical AI considerations (bias, explainability, oversight)  
-✔️ A complete, consulting-ready **Audit Report**  
+- ✔️ Reusable templates and checklists
+- ✔️ Jupyter notebooks for data analysis
+- ✔️ GDPR field mappings and detection rules
+- ✔️ DSFA and risk assessment outlines
+- ✔️ Ethical AI considerations
+- ✔️ Executive-ready audit reporting
 
 ---
 
 ## 📂 Repository Structure
 
-| Folder / File     | Purpose                                                          |
-|---------------------|-----------------------------------------------------------------|
-| `/docs`             | Complete documentation, checklists, audit report, diagrams     |
-| `/framework`        | Reusable templates for consulting engagements                  |
-| `/policies`         | Example policies and consent forms                             |
-| `/data`             | Simulated log data for analysis                                |
-| `/notebooks`        | Jupyter notebooks for parsing, cleaning, and feature engineering |
-| `README.md`         | This documentation                                             |
-| `LICENSE`           | Licensing information                                          |
+| Folder        | Purpose                                                      |
+|----------------|-------------------------------------------------------------|
+| `/docs`       | Full documentation, checklists, audit report, diagrams      |
+| `/framework`  | Reusable consulting templates                               |
+| `/policies`   | Example policies and consent forms                          |
+| `/data`       | Simulated healthcare logs (CSV)                             |
+| `/notebooks`  | Jupyter notebooks for parsing, cleaning, feature engineering |
+| `LICENSE`     | MIT License information                                     |
 
 ---
 
-## 🗂️ Documentation Highlights
+## 🗂️ Highlights
 
-### 📌 /docs
-✅ Business_Use_Case.md – Real-world scenario description  
-✅ GDPR_Requirements.md – Key articles and obligations  
-✅ Stakeholder_Analysis.md – Roles, interests, communication plans  
-✅ GDPR_Checklist.md – Privacy by Design audit questions  
-✅ Field_GDPR_Mapping.md – Logs → GDPR article mapping  
-✅ Detection_Rules.md – SIEM-ready monitoring rules  
-✅ DSFA_Outline.md – Data Protection Impact Assessment template  
-✅ Ethical_Considerations.md – Bias, transparency, human oversight  
-✅ Threat_Model.md – STRIDE analysis for AI systems  
-✅ Audit_Report.md – Complete executive-ready final report  
+### ✅ /docs
+- Business Use Case and Stakeholder Analysis
+- GDPR Requirements and Checklists
+- Detection Rules for SIEM
+- Field-to-GDPR Article Mapping
+- DSFA Outline
+- Ethical AI Considerations
+- STRIDE Threat Model
+- Executive-ready Audit Report
 
 ---
 
-### 📌 /framework
-✅ Templates for:
-- Stakeholder analysis
-- GDPR assessments
-- Detection rule design
-- DSFA documentation
-- Incident response playbooks
-
-*Ready to be copied, customized, and reused in consulting projects.*
+### ✅ /framework
+Templates for:
+- Stakeholder Analysis
+- GDPR Assessments
+- Detection Rule Design
+- DSFA Documentation
+- Incident Response Playbooks
 
 ---
 
-### 📌 /policies
-✅ Example policies and forms:
-- Data protection policy
-- AI usage policy
-- Consent form template
+### ✅ /policies
+Example policies and forms:
+- Data Protection Policy
+- AI Usage Policy
+- Consent Form Template
 
 ---
 
-## 🛠️ Technologies and Tools
+## 🛠️ Tech Stack
 
 - **Languages:** Markdown, Python (Jupyter)
 - **Libraries:** pandas, matplotlib, seaborn
 - **Diagramming:** draw.io, Mermaid
 - **Versioning:** Git, GitHub
 
-All **free** and **industry-standard**.
+_All free and industry-standard._
 
 ---
 
-## 📌 How To Use This Framework
+## 📌 How To Use
 
-1️⃣ **Stakeholder Alignment**  
-- Use /framework/Stakeholder_Analysis_Template.md  
-- Document roles, interests, communication strategies
+1️⃣ **Align Stakeholders**
+- /framework/Stakeholder_Analysis_Template.md
 
-2️⃣ **Simulate and Analyze Logs**  
-- Place CSV in /data  
-- Clean and analyze in /notebooks using pandas  
+2️⃣ **Analyze Logs**
+- /data/healthcare_logs.csv
+- Clean and analyze in /notebooks with pandas
 
-3️⃣ **Apply GDPR Checklists**  
-- Work through /docs/GDPR_Checklist.md  
-- Fill out /docs/Field_GDPR_Mapping.md
+3️⃣ **Apply GDPR Checklists**
+- /docs/GDPR_Checklist.md
+- /docs/Field_GDPR_Mapping.md
 
-4️⃣ **Design Detection Rules**  
-- Document in /docs/Detection_Rules.md  
-- Provide SIEM queries and ML-based approaches
+4️⃣ **Design Detection Rules**
+- /docs/Detection_Rules.md
 
-5️⃣ **Conduct DSFA**  
-- Use /docs/DSFA_Outline.md template  
-- Quantify risks, mitigation strategies
+5️⃣ **Conduct DSFA**
+- /docs/DSFA_Outline.md
 
-6️⃣ **Model Threats**  
-- STRIDE-based analysis in /docs/Threat_Model.md
+6️⃣ **Model Threats**
+- /docs/Threat_Model.md
 
-7️⃣ **Include Ethical Considerations**  
-- Document fairness, explainability, human oversight
+7️⃣ **Include Ethical Considerations**
+- /docs/Ethical_Considerations.md
 
-8️⃣ **Deliver Audit Report**  
-- Compile all findings into /docs/Audit_Report.md  
-- Include Dataflow Diagram (Mermaid or draw.io)
+8️⃣ **Deliver Audit Report**
+- /docs/Audit_Report.md
 
 ---
 
 ## ✅ Outcome
 
-✔️ **Consulting-quality, audit-ready documentation**  
-✔️ Fully aligned with **GDPR Articles 5, 9, 25, 32**  
-✔️ Supports **Privacy by Design** principles  
-✔️ Portfolio-ready for **Security Architect / Regulatory Consultant** roles
+✔️ **Consulting-quality, audit-ready documentation**
+✔️ Supports **GDPR Articles 5, 9, 25, 32**
+✔️ Enables **Privacy by Design** assessments
+✔️ Ideal for **Security Architects, DPOs, Consultants**
 
 ---
 
-## 💼 Target Audience
+## 💼 Target Users
 
 - Security Architects
 - Data Protection Officers
 - AI Product Managers
 - Compliance and Legal Teams
-- Consultants delivering privacy assessments
+- Privacy Consultants
 
 ---
 
-## 📝 License
+## 📜 License
 
-This project is licensed under the MIT License – see LICENSE for details.
+MIT License – see LICENSE for details.
 
 ---
 
-## 📌 Author
+## ✉️ Author
 
-**[Georg Wiesmüller]**
+**Georg Wiesmüller**
 
-For questions, improvements or collaborations → feel free to open an Issue or Pull Request!
+For questions, improvements or collaborations → open an Issue or Pull Request!
