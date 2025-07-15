@@ -135,8 +135,8 @@ def pseudonymize_id(patient_id, secret_key):
     import hmac, hashlib
     return hmac.new(secret_key.encode(), patient_id.encode(), hashlib.sha256).hexdigest()
 
-
+```
 ---
 
-*Version 1.0 – Georg Wiesmüller*
+*Version 1.2 – Georg Wiesmüller*
 
