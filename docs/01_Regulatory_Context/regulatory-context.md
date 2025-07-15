@@ -21,14 +21,29 @@ The **GDPR** (EU Regulation 2016/679) applies to any processing of personal data
 
 ---
 
-## ✅ EU AI Act
+## ✅ EU AI Act (2024) – High-Risk Classification
 
-The **EU AI Act** (2023 draft) classifies certain AI systems as **High-Risk**, including those used in healthcare diagnostics.
+The **EU Artificial Intelligence Act (2024 Final)** explicitly classifies many Healthcare AI systems as **High-Risk** under Annex III. This includes:
 
-**Key points:**
-- High-Risk AI systems require risk management systems, logging, human oversight
-- SIEM Rules must detect anomalies in AI data flows
-- Compliance requires explainability and traceability of decisions
+- AI systems for medical diagnosis and treatment recommendations
+- Clinical decision support systems
+- Radiology / Imaging analysis
+- Patient triage and risk scoring
+- Digital health assistants
+
+**Key Requirements:**
+- Comprehensive Risk Management System (Article 9)
+- Logging and Traceability for model decisions (Article 12)
+- Human Oversight and Interventions (Article 14)
+- High-Quality Datasets to reduce bias (Article 10)
+- CE Marking and Conformity Assessments (Chapter IV)
+
+**SIEM Rulebook Implications:**
+- Detect missing or incomplete logs
+- Monitor for consent verification failures
+- Alert on unauthorized model access or data exports
+- Provide audit-ready evidence for oversight
+
 
 ---
 
