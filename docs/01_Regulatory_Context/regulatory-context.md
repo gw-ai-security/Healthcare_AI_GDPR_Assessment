@@ -44,6 +44,25 @@ The **EU Artificial Intelligence Act (2024 Final)** explicitly classifies many H
 - Alert on unauthorized model access or data exports
 - Provide audit-ready evidence for oversight
 
+---
+
+## ✅ National Legislation – Germany Example
+
+In addition to the EU GDPR and AI Act, healthcare providers in Germany must comply with **national health data regulations**, such as:
+
+- **KHZG (Krankenhauszukunftsgesetz):**
+  - German Hospital Future Act mandating digitization of healthcare facilities.
+  - Requires secure IT infrastructure, audit logging, access control, and interoperability standards.
+  - Funding eligibility tied to meeting security-by-design requirements.
+
+- **GDSG (Gesundheitsdatenschutzgesetz, planned):**
+  - Proposed German Health Data Protection Act harmonizing GDPR with sector-specific rules.
+  - Expected to define stricter consent requirements for research, stronger pseudonymization obligations, and clearer logging mandates.
+
+**SIEM Rulebook Implications:**
+- Monitor access logs to meet KHZG security funding criteria.
+- Provide consent verification evidence aligned with German rules.
+- Enable reporting capabilities for cross-border data transfers and research use.
 
 ---
 
