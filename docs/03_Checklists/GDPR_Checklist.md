@@ -9,6 +9,28 @@ To translate GDPR principles into practical, auditable questions for AI system a
 
 ---
 
+## ✅ GDPR Article Mapping – Detailed Audit Checklist
+
+This checklist translates key GDPR Articles into **practical audit questions** for Healthcare AI systems.
+
+| GDPR Article | Purpose                                | Audit Questions                                                            |
+|---------------|----------------------------------------|----------------------------------------------------------------------------|
+| **Art. 5**    | Principles of Processing               | - Is data minimization enforced in data models?<br>- Is purpose limitation documented?<br>- Is transparency ensured in AI explanations? |
+| **Art. 6**    | Lawfulness of Processing               | - Is a valid lawful basis documented for each processing activity?<br>- Are consent records linked to processing logs? |
+| **Art. 9**    | Special Categories of Data             | - Is explicit consent obtained for health data?<br>- Is consent verifiable in logs?<br>- Are special categories flagged in SIEM events? |
+| **Art. 25**   | Privacy by Design and by Default       | - Are encryption and pseudonymization implemented?<br>- Is access control enforced via RBAC?<br>- Is data minimization enforced at design stage? |
+| **Art. 32**   | Security of Processing                 | - Is data encrypted at rest and in transit?<br>- Are access logs monitored?<br>- Is SIEM alerting in place for unauthorized access? |
+| **Art. 44+**  | Transfers to Third Countries           | - Is consent required and logged for non-EU transfers?<br>- Is adequacy decision verified?<br>- Is data transfer logging enabled? |
+
+---
+
+✅ **Consulting Notes:**
+- This table can be used during client workshops to document compliance gaps.
+- Supports Privacy Impact Assessments (DPIA) and Data Protection Impact Analyses.
+- Maps directly to SIEM Use Cases and Detection Rules.
+
+---
+
 ## 📌 Checklist Table
 
 | Principle              | Audit Question                                                       | Status | Notes/Actions                           |
