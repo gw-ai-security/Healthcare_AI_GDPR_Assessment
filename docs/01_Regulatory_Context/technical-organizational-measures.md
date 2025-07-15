@@ -97,7 +97,7 @@ To ensure GDPR Article 32 compliance, encryption must be applied **at rest** and
 - Log encryption failures or key access attempts
 - Monitor configurations for weak cipher suites
 
-  ## ✅ Pseudonymization and Anonymization Techniques
+## ✅ Pseudonymization and Anonymization Techniques
 
 Healthcare AI systems must protect patient identities through **pseudonymization** and **anonymization** methods.
 
