@@ -136,7 +136,36 @@ def pseudonymize_id(patient_id, secret_key):
     return hmac.new(secret_key.encode(), patient_id.encode(), hashlib.sha256).hexdigest()
 
 ```
+
+## ✅ Privacy by Design – Consent Check Example
+
+Ensuring **consent verification** before data processing is a core GDPR requirement (Articles 6, 9). Healthcare AI systems must enforce consent checks **by design**.
+
 ---
+
+### ✅ Concept
+
+- Consent must be explicit, documented, and verifiable.
+- Systems should block processing without valid consent.
+- Logs must capture consent verification steps for audit.
+
+---
+
+### ✅ Example Pseudocode (Python)
+
+```python
+def check_consent(patient_id, consent_registry):
+    """
+    Checks if consent is documented for a given patient.
+    """
+    if consent_registry.get(patient_id) == True:
+        return True
+    else:
+        raise PermissionError("No valid consent found for patient ID")
+
+
+---
+
 
 *Version 1.2 – Georg Wiesmüller*
 
