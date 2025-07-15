@@ -79,5 +79,25 @@ This section documents the **key measures** that support GDPR, HIPAA, and EU AI 
 
 ---
 
+## ✅ Encryption Standards and Recommendations
+
+To ensure GDPR Article 32 compliance, encryption must be applied **at rest** and **in transit** using industry-standard algorithms.
+
+**Recommended Standards:**
+- **AES-256:** For encrypting data at rest (databases, file storage)
+- **TLS 1.3:** For data in transit (APIs, web services)
+
+**Key Management Best Practices:**
+- Use cloud KMS (AWS KMS, Azure Key Vault)
+- Rotate encryption keys regularly
+- Enforce strict access controls on key material
+
+**SIEM Implications:**
+- Alert on unencrypted transfers
+- Log encryption failures or key access attempts
+- Monitor configurations for weak cipher suites
+
+---
+
 *Version 1.0 – Georg Wiesmüller*
 
