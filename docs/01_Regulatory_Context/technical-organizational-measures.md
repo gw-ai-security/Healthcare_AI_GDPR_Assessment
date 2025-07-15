@@ -163,7 +163,7 @@ def check_consent(patient_id, consent_registry):
     else:
         raise PermissionError("No valid consent found for patient ID")
 
-
+```
 ---
 
 
