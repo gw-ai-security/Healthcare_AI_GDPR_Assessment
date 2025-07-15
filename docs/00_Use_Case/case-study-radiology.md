@@ -62,4 +62,9 @@ AI models analyze **special category health data** to detect anomalies, prioriti
 
 ## ✅ SIEM Rulebook Example
 
-
+- Detection Rule: Non-EU Export of DICOM Files without Consent
+- Severity: High
+- GDPR Mapping: Article 44
+- AI Act Mapping: High-Risk Logging Requirement
+- HIPAA Mapping: Transmission Security
+- Business Impact: Avoid €20M fines; ensure cross-border compliance.
