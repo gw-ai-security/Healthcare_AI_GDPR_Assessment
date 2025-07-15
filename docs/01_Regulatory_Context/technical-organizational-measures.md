@@ -97,6 +97,45 @@ To ensure GDPR Article 32 compliance, encryption must be applied **at rest** and
 - Log encryption failures or key access attempts
 - Monitor configurations for weak cipher suites
 
+  ## ✅ Pseudonymization and Anonymization Techniques
+
+Healthcare AI systems must protect patient identities through **pseudonymization** and **anonymization** methods.
+
+---
+
+### ✅ Definitions
+
+- **Pseudonymization:** Replacing identifiers with pseudonyms (reversible with key).
+- **Anonymization:** Irreversible transformation preventing identification.
+
+---
+
+### ✅ Common Techniques
+
+✅ **k-Anonymity:**
+- Generalize or suppress data to ensure each record is indistinguishable from at least k others.
+- Example: Replace exact age with age range.
+
+✅ **Differential Privacy:**
+- Adds mathematically calibrated noise to results.
+- Ensures individual contribution cannot be determined.
+
+✅ **Tokenization:**
+- Replace sensitive values with secure tokens stored in a vault.
+
+✅ **Hashing:**
+- Use cryptographic hash functions (e.g. SHA-256) for irreversible pseudonyms.
+
+---
+
+### ✅ Example Pseudocode (Python)
+
+```python
+def pseudonymize_id(patient_id, secret_key):
+    import hmac, hashlib
+    return hmac.new(secret_key.encode(), patient_id.encode(), hashlib.sha256).hexdigest()
+
+
 ---
 
 *Version 1.0 – Georg Wiesmüller*
