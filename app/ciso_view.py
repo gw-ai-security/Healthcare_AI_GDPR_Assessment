@@ -1,8 +1,10 @@
+from app.utils.audit_logger import log_action
 
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+    log_action('demo_user', 'CISO', 'Accessed Dashboard', 'CISO Dashboard')
 def show_ciso_dashboard():
     st.title("🧑‍💼 CISO Dashboard – GDPR Security Risk Overview")
 

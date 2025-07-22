@@ -1,8 +1,10 @@
+from app.utils.audit_logger import log_action
 
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+    log_action('demo_user', 'SOC', 'Accessed Dashboard', 'SOC Dashboard')
 def show_soc_dashboard():
     st.title("🧑‍💻 SOC Analyst Dashboard – Active Alerts & Rule Effectiveness")
 
