@@ -1,94 +1,86 @@
-# AI-Specific Threat Model (STRIDE Analysis)
-
-This document identifies and describes potential security threats specific to Healthcare AI systems using the STRIDE methodology.
-
----
+# 🛡️ Threat Model – Healthcare AI System (GDPR & SIEM Context)
 
 ## 🎯 Purpose
-To analyze AI system components for security threats and design appropriate mitigations, supporting GDPR Art. 32 (Security of Processing) and Privacy by Design (Art. 25).
+
+This threat model aims to identify and structure key attack vectors in the context of a GDPR-regulated Healthcare AI system. It follows the STRIDE methodology and highlights risks relevant to log integrity, user consent, AI model safety, and regulatory exposure.
 
 ---
 
-## 📌 STRIDE Threat Categories
+## 🔍 STRIDE Matrix Overview
 
-### S – Spoofing
-**Description:** Impersonating a legitimate user or system component.  
-✅ *AI-Specific Example:*  
-- Adversarial examples crafted to mislead AI model output.
-
-**Mitigations:**  
-- Input validation and adversarial training.  
-- User authentication for API access.
-
----
-
-### T – Tampering
-**Description:** Unauthorized modification of data or code.  
-✅ *AI-Specific Example:*  
-- Data poisoning attacks corrupting training data.  
-- Unauthorized changes to model weights.
-
-**Mitigations:**  
-- Secure data pipelines.  
-- Integrity checks and version control for training datasets.  
-- Model signing and verification.
+| Threat Category | Description | Example in Healthcare AI | Mitigation |
+|------------------|-------------|---------------------------|------------|
+| **S – Spoofing** | Impersonating a user or system identity | Fake doctor accesses EHR logs via stolen credentials | MFA, strict RBAC, anomaly detection |
+| **T – Tampering** | Malicious data modification | Adversary alters consent logs or pseudonymization data | Hashing, digital signatures, SIEM alerts |
+| **R – Repudiation** | Denial of actions taken | A user denies having transferred patient data to non-EU systems | Audit logs, Art. 30 GDPR compliance, signed logs |
+| **I – Information Disclosure** | Unauthorized data exposure | AI logs contain unmasked patient diagnosis codes | Data masking, field-level encryption |
+| **D – Denial of Service** | Disruption of system availability | Flooding logging pipeline to avoid traceability | Rate-limiting, anomaly detection, throttling |
+| **E – Elevation of Privilege** | Gaining higher access levels | Data scientist gains access to DPO dashboards | Role isolation, privileged access reviews |
 
 ---
 
-### R – Repudiation
-**Description:** Denial of actions without traceability.  
-✅ *AI-Specific Example:*  
-- Lack of audit logs for model predictions.  
-- No evidence of data processing consent.
+## 🤖 AI-Specific Threat Extensions
 
-**Mitigations:**  
-- Robust logging of API calls and predictions.  
-- Consent logging and auditability.
-
----
-
-### I – Information Disclosure
-**Description:** Unauthorized exposure of information.  
-✅ *AI-Specific Example:*  
-- Model inversion attacks revealing training data.  
-- Logging of sensitive health data without encryption.
-
-**Mitigations:**  
-- Encrypt sensitive logs.  
-- Differential privacy techniques.  
-- Pseudonymization of data fields.
+| AI Threat | Description | Example | Mitigation |
+|-----------|-------------|---------|------------|
+| **Adversarial Input** | Manipulated inputs that trick AI | Noise-injected X-rays trigger false model output | Input sanitization, adversarial training |
+| **Model Drift Exploitation** | Model shifts unnoticed due to drift | Consent classifier becomes unreliable over time | Drift detection, retraining policies |
+| **Prompt Injection / Data Poisoning** | LLM or model backend receives malicious payloads | Injection corrupts audit logs or compliance policies | Input validation, monitoring, Guardrails AI |
+| **Bias Exploitation** | Skewed predictions due to non-representative data | Overflagging of minority demographic logs | Bias audits, explainability tools (SHAP, LIME) |
 
 ---
 
-### D – Denial of Service
-**Description:** Making a service unavailable or degrading performance.  
-✅ *AI-Specific Example:*  
-- Overloading AI inference API with adversarial queries.  
-- Resource exhaustion via malformed inputs.
+## 🧠 Attack Tree: "Consent Manipulation & Exfiltration"
 
-**Mitigations:**  
-- Rate limiting.  
-- Input validation.  
-- Resource isolation for model serving.
+```mermaid
+graph TD
+A[Entry Point: Analyst Access] --> B[Abuse: Consent Flag Tampering]
+B --> C[Target: GDPR Breach - Art. 7]
+B --> D[Masking Deactivated on Output]
+C --> E[Incident Undetected in SIEM]
+D --> E
+E --> F[Regulatory Penalty: 20M€ Risk]
 
----
+## 📊 Risk Prioritization Table
 
-### E – Elevation of Privilege
-**Description:** Unauthorized increase in access rights.  
-✅ *AI-Specific Example:*  
-- Prompt injection attacks in LLM components.  
-- API key leakage enabling unrestricted model access.
-
-**Mitigations:**  
-- Strong access controls and key management.  
-- Prompt sanitization for LLMs.  
-- Role-based access policies.
+| Threat                      | Likelihood | Impact | Risk Level | Detection Rule |
+|-----------------------------|------------|--------|------------|----------------|
+| Consent tampering           | Medium     | High   | 🔴 High     | UC-03          |
+| Non-EU data export          | High       | High   | 🔴 High     | UC-01          |
+| Adversarial log injection   | Low        | Medium | 🟠 Medium   | UC-05          |
+| Access privilege escalation | Medium     | High   | 🔴 High     | UC-04          |
 
 ---
 
-## ✅ Outcome
-A documented AI-specific threat model that:
-- Supports Privacy by Design principles.
-- Identifies and mitigates GDPR Art. 32 security risks.
-- Provides clear guidance for security architecture and SIEM rule design.
+## 🛡️ Mitigation Strategy Summary
 
+### 🔐 Access Control
+- Multi-Factor Authentication (MFA)
+- Role-Based Access Control (RBAC)
+- Least Privilege Principle
+- Session Monitoring & Logging
+
+### 🧾 Auditability & Evidence
+- Immutable audit logs
+- GDPR Art. 30 compliance (record of processing activities)
+- Timestamping and signed logs
+
+### 🤖 AI Resilience
+- Adversarial input training and defense
+- Model drift monitoring and thresholds
+- Explainability tooling (e.g., SHAP, LIME)
+
+### 📜 Compliance Traceability
+- Explicit mapping to GDPR Articles:
+  - Art. 5 (Principles)
+  - Art. 7 (Consent)
+  - Art. 25 (Privacy by Design)
+  - Art. 32 (Security of Processing)
+
+### ⚠️ SIEM Alerts
+- Detection rules aligned with specific STRIDE threats
+- Mapped Use Cases:
+  - UC-01: Non-EU Data Export
+  - UC-03: Consent Tampering
+  - UC-04: Privilege Escalation
+  - UC-05: Adversarial Log Injection
