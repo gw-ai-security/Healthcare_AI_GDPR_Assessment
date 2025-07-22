@@ -1,41 +1,46 @@
-# Healthcare AI GDPR Compliance Assessment
 
-_A consulting-ready framework to audit and ensure GDPR compliance for AI systems in healthcare._
+# 🛡️ Healthcare AI GDPR Compliance Assessment
+
+_A consulting-ready, audit-grade framework to ensure GDPR and AI Act compliance for machine learning systems in healthcare._
 
 ---
 
 ## 🎯 Project Goal
 
-Deliver a **complete, audit-ready framework** simulating a real consulting engagement for healthcare AI systems:
+Deliver a **complete, realistic, portfolio-ready framework** simulating a full consulting engagement for healthcare AI systems, including:
 
-- Analyzing data processing logs
-- Mapping GDPR requirements
-- Designing SIEM detection rules
-- Conducting DSFA and risk assessments
-- Producing executive-ready audit reports
+- Data flow and processing risk analysis
+- GDPR & EU AI Act requirement mapping
+- SIEM rulebook with detection logic and FP/FN strategies
+- Threat modeling (STRIDE) and DSFA
+- Ethical AI and bias considerations
+- Executive-level audit documentation
 
 ---
 
 ## 📌 Why It Matters
 
-Healthcare AI systems process **special category data** (GDPR Art. 9) requiring:
-- Explicit, verifiable consent
-- Purpose limitation
-- Secure processing and encryption
-- Privacy by Design (Art. 25)
+Healthcare AI systems process **special category data** (GDPR Art. 9) and are classified as **High-Risk AI Systems** under the **EU AI Act (2024)**. They require:
 
-**Non-compliance = up to €20 million or 4% of turnover.**
+- Explicit, traceable consent
+- Purpose limitation and minimization
+- Technical and Organizational Measures (TOMs)
+- Human oversight and explainability (Art. 22)
+- Robust detection and audit mechanisms
+
+**Non-compliance = Up to €20 million or 4% of turnover.**
 
 ---
 
 ## ✅ What This Framework Provides
 
-- ✔️ Reusable templates and checklists
-- ✔️ Jupyter notebooks for data analysis
-- ✔️ GDPR field mappings and detection rules
-- ✔️ DSFA and risk assessment outlines
-- ✔️ Ethical AI considerations
-- ✔️ Executive-ready audit reporting
+- ✔️ Real-world use cases from radiology, wearables, and telemedicine
+- ✔️ Threat modeling and detection use case mapping
+- ✔️ False positive/negative tuning strategies
+- ✔️ DSFA structure and risk matrix
+- ✔️ Reusable consulting templates and checklists
+- ✔️ Ethical AI documentation and GDPR field mapping
+- ✔️ Executive-ready audit report for stakeholders
 
 ---
 
@@ -43,44 +48,52 @@ Healthcare AI systems process **special category data** (GDPR Art. 9) requirin
 
 | Folder        | Purpose                                                      |
 |----------------|-------------------------------------------------------------|
-| `/docs`       | Full documentation, checklists, audit report, diagrams      |
-| `/framework`  | Reusable consulting templates                               |
-| `/policies`   | Example policies and consent forms                          |
-| `/data`       | Simulated healthcare logs (CSV)                             |
-| `/notebooks`  | Jupyter notebooks for parsing, cleaning, feature engineering |
-| `LICENSE`     | MIT License information                                     |
+| `/docs`       | Full documentation, use cases, detection rules, audit report |
+| `/framework`  | Reusable consulting templates (GDPR, DSFA, rules)           |
+| `/policies`   | Sample policies (data protection, AI usage, consent forms)  |
+| `/data`       | Synthetic healthcare logs with GDPR violations              |
+| `/diagrams`   | System architecture and dataflow diagrams                   |
+| `/notebooks`  | Jupyter notebooks for parsing, cleaning, risk scoring       |
+| `/scripts`    | Pseudonymization and compliance utilities                   |
+| `/templates`  | Markdown templates for assessments and playbooks            |
 
 ---
 
 ## 🗂️ Highlights
 
 ### ✅ /docs
-- Business Use Case and Stakeholder Analysis
-- GDPR Requirements and Checklists
-- Detection Rules for SIEM
-- Field-to-GDPR Article Mapping
-- DSFA Outline
-- Ethical AI Considerations
-- STRIDE Threat Model
-- Executive-ready Audit Report
+
+- 📄 `Business_Use_Case.md`: AI usage in healthcare (radiology, IoT, telemedicine)
+- 👥 `Stakeholder_Analysis.md`: CISO, DPO, SOC, PM
+- ⚖️ `GDPR_Requirements.md`: Art. 5, 7, 9, 25, 32, 44
+- 🧾 `Detection_Rules.md`: 5 use cases, queries, FP/FN, AI Act mapping
+- 📊 `risk-prioritization.md` + `DSFA_Outline.md`
+- 🔒 `technical-organizational-measures.md`: Encryption, RBAC, pseudonymization
+- 🔎 `Threat_Model.md`: STRIDE for AI pipelines
+- 🧠 `Ethical_Considerations.md`: Bias, explainability, human oversight
+- 📑 `Audit_Report.md`: Full summary, risk matrix, recommendations
 
 ---
 
 ### ✅ /framework
+
 Templates for:
-- Stakeholder Analysis
-- GDPR Assessments
-- Detection Rule Design
-- DSFA Documentation
-- Incident Response Playbooks
+
+- Stakeholder analysis
+- GDPR field assessments
+- Detection rule design
+- DSFA reports
+- Incident response playbooks
 
 ---
 
 ### ✅ /policies
-Example policies and forms:
+
+Example policies:
+
 - Data Protection Policy
 - AI Usage Policy
-- Consent Form Template
+- Consent Form Template (Art. 7)
 
 ---
 
@@ -88,59 +101,62 @@ Example policies and forms:
 
 - **Languages:** Markdown, Python (Jupyter)
 - **Libraries:** pandas, matplotlib, seaborn
-- **Diagramming:** draw.io, Mermaid
-- **Versioning:** Git, GitHub
+- **SIEM Logic:** Elastic DSL, YAML (Sigma-compatible)
+- **Model Analysis:** Optional ML drift logic via `Evidently`
+- **Diagrams:** draw.io, Mermaid
 
-_All free and industry-standard._
+_All free, open-source, and consulting-compatible._
 
 ---
 
 ## 📌 How To Use
 
-1️⃣ **Align Stakeholders**
-- /framework/Stakeholder_Analysis_Template.md
+1️⃣ **Understand the Use Case**
+   → `/docs/00_Use_Case/Business_Use_Case.md`
 
-2️⃣ **Analyze Logs**
-- /data/healthcare_logs.csv
-- Clean and analyze in /notebooks with pandas
+2️⃣ **Analyze Synthetic Logs**
+   → `/data/healthcare_logs.csv`  
+   → Notebooks: cleaning, enrichment, risk scoring
 
-3️⃣ **Apply GDPR Checklists**
-- /docs/GDPR_Checklist.md
-- /docs/Field_GDPR_Mapping.md
+3️⃣ **Apply Legal Mapping**
+   → `/docs/GDPR_Checklist.md`  
+   → `/docs/Field_GDPR_Mapping.md`
 
-4️⃣ **Design Detection Rules**
-- /docs/Detection_Rules.md
+4️⃣ **Design and Validate Detection Rules**
+   → `/docs/Detection_Rules.md` (FP/FN strategies included)
 
-5️⃣ **Conduct DSFA**
-- /docs/DSFA_Outline.md
+5️⃣ **Conduct Risk Assessment**
+   → `/docs/DSFA_Outline.md`  
+   → `/docs/risk-prioritization.md`
 
-6️⃣ **Model Threats**
-- /docs/Threat_Model.md
+6️⃣ **Model Threats (STRIDE)**
+   → `/docs/Threat_Model.md`
 
-7️⃣ **Include Ethical Considerations**
-- /docs/Ethical_Considerations.md
+7️⃣ **Review Ethical AI Risks**
+   → `/docs/Ethical_Considerations.md`
 
-8️⃣ **Deliver Audit Report**
-- /docs/Audit_Report.md
+8️⃣ **Generate Final Audit Report**
+   → `/docs/Audit_Report.md`
 
 ---
 
-## ✅ Outcome
+## ✅ Final Outcome
 
-✔️ **Consulting-quality, audit-ready documentation**
-✔️ Supports **GDPR Articles 5, 9, 25, 32**
-✔️ Enables **Privacy by Design** assessments
-✔️ Ideal for **Security Architects, DPOs, Consultants**
+✔️ **Audit-ready documentation & detection rulebook**  
+✔️ Aligns with **GDPR Articles 5, 9, 25, 32, 44**  
+✔️ Supports **EU AI Act Conformity Readiness**  
+✔️ Includes **Risk Matrix, DSFA, STRIDE, Ethical Analysis**  
+✔️ Fully reusable for client engagements or interviews
 
 ---
 
 ## 💼 Target Users
 
 - Security Architects
-- Data Protection Officers
-- AI Product Managers
-- Compliance and Legal Teams
-- Privacy Consultants
+- DPOs and Data Privacy Officers
+- AI Product and Risk Managers
+- Compliance Officers
+- Privacy & GRC Consultants
 
 ---
 
@@ -152,6 +168,5 @@ MIT License – see LICENSE for details.
 
 ## ✉️ Author
 
-**Georg Wiesmüller**
-
-For questions, improvements or collaborations → open an Issue or Pull Request!
+**Georg Wiesmüller**  
+Open an [Issue](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/issues) or PR to contribute, improve, or collaborate.
