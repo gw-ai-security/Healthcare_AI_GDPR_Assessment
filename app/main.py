@@ -1,10 +1,11 @@
 # /app/main.py
 
 import streamlit as st
-from ciso_view import show_ciso_dashboard
-from dpo_view import show_dpo_dashboard
-from soc_view import show_soc_dashboard
-from auditor_view import show_auditor_dashboard
+from app.ciso_view import show_ciso_dashboard
+from app.dpo_view import show_dpo_dashboard
+from app.soc_view import show_soc_dashboard
+from app.auditor_view import show_auditor_dashboard
+from app.audit_logger import log_action
 
 # Dummy login database (to be replaced with secure version)
 USER_DB = {
