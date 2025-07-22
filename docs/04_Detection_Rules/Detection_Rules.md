@@ -30,7 +30,7 @@ To help Security Architects, DPOs, and Compliance teams detect data processing e
     }
   }
 }
-
+```
 ---
 
 ### 🛑 False Positive / False Negative Strategy
