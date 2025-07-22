@@ -1,5 +1,5 @@
 
-# 🗂️ /logs/ – Audit & Operational Logs
+# 🗂️ Audit & Operational Logs
 
 This folder contains operational logs related to the GDPR compliance dashboard.  
 All log files are machine-generated and provide traceability for security audits, stakeholder access, and GDPR Article 30 documentation.
