@@ -1,0 +1,5 @@
+timestamp,user,role,view,action
+2025-07-22T18:35:05.880989,ciso_user,CISO,CISO Dashboard,Viewed Risk Trend
+2025-07-22T18:35:05.883116,dpo_user,DPO,DPO Dashboard,Exported Consent Report
+2025-07-22T18:35:05.884169,soc_user,SOC,SOC Dashboard,Acknowledged Alert
+2025-07-22T18:35:05.884459,auditor_user,AUDITOR,Auditor Dashboard,Downloaded Art. 30 Logs
