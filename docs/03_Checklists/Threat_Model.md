@@ -41,6 +41,8 @@ C --> E[Incident Undetected in SIEM]
 D --> E
 E --> F[Regulatory Penalty: 20M€ Risk]
 
+```
+
 ## 📊 Risk Prioritization Table
 
 | Threat                      | Likelihood | Impact | Risk Level | Detection Rule |
