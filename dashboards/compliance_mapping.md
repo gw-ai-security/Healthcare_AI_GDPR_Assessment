@@ -36,10 +36,5 @@ This matrix maps GDPR articles to specific detection rules, affected dashboard v
 
 ---
 
-## ✅ Recommendation for Storage
 
-📂 Speichere die Datei hier:
-
-```plaintext
-/docs/compliance_mapping.md
 
