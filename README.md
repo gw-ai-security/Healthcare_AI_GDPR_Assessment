@@ -1,6 +1,6 @@
 # Healthcare AI GDPR Compliance Dashboard
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit)](YOUR_STREAMLIT_CLOUD_URL_HERE)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit)](https://healthcareaigdprassessment-irbfdahw6bugn7nnymhabz.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python)](https://python.org)
 [![GDPR](https://img.shields.io/badge/GDPR-Compliant-28a745?style=for-the-badge)](https://gdpr.eu)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
