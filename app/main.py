@@ -14,7 +14,7 @@ USER_DB = {
 }
 
 def login():
-    st.title("🛡️ Healthcare AI GDPR Dashboard")
+    st.title("Healthcare AI GDPR Dashboard")
     st.subheader("Login")
 
     username = st.text_input("Username")
