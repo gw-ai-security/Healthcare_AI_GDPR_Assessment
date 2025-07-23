@@ -63,7 +63,7 @@ This dashboard directly supports:
 | EU AI Act (Annex III) | High-risk classification reporting |
 | ISO/IEC 27001      | Annex A.9, A.12 – Logging, Access      |
 
-➡ See [`compliance_mapping.md`](./compliance_mapping.md) for full traceability chain.
+See [`compliance_mapping.md`](./compliance_mapping.md) for full traceability chain.
 
 ---
 
