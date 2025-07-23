@@ -1,4 +1,3 @@
-```markdown
 # Healthcare AI GDPR Compliance Dashboard
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit)](YOUR_STREAMLIT_CLOUD_URL_HERE)
@@ -34,7 +33,7 @@ Healthcare AI systems process **special category data** (GDPR Art. 9) and are cl
 ### CISO Dashboard - Security Risk Overview
 *Risk metrics, department-wise threat analysis, and incident tracking*
 
-### DPO Dashboard - GDPR Compliance
+### DPO Dashboard - GDPR Compliance  
 *Article violations, consent management, cross-border transfers*
 
 ### SOC Dashboard - Active Monitoring
@@ -258,6 +257,3 @@ Open an [Issue](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/
 ---
 
 *This project demonstrates practical expertise in GDPR compliance, healthcare AI regulation, security monitoring, and professional dashboard development.*
-```
-
-Speichern Sie diesen kompletten Inhalt als `README.md` in Ihrem Repository Root-Verzeichnis. Der Markdown ist vollständig formatiert und bereit für GitHub!
