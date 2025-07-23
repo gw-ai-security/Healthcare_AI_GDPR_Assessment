@@ -1,11 +1,13 @@
 from app.utils.audit_logger import log_action
-
 import streamlit as st
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Für Streamlit
 import matplotlib.pyplot as plt
 
-    log_action('demo_user', 'DPO', 'Accessed Dashboard', 'DPO Dashboard')
 def show_dpo_dashboard():
+    log_action('demo_user', 'DPO', 'Accessed Dashboard', 'DPO Dashboard')
+    
     st.title("👩‍⚖️ DPO Dashboard – GDPR Article Compliance")
 
     st.markdown("""
@@ -25,25 +27,34 @@ def show_dpo_dashboard():
         'Violations': [6, 2, 5, 3, 7]
     })
 
-    fig1, ax1 = plt.subplots()
-    articles.set_index('GDPR Article').plot(kind='bar', ax=ax1, color='tomato', legend=False)
-    ax1.set_ylabel("Violation Count")
+    fig1, ax1 = plt.subplots(figsize=(10, 6))
+    articles.set_index('GDPR Article')['Violations'].plot(
+        kind='bar', ax=ax1, color='darkred', alpha=0.8
+    )
+    ax1.set_title('GDPR Article Violations')
+    ax1.set_ylabel('Number of Violations')
+    plt.xticks(rotation=45)
     st.pyplot(fig1)
 
-    st.markdown("## 🌍 Transfers by Country")
-    transfers = pd.DataFrame({
-        'Country': ['Germany', 'France', 'US', 'India'],
-        'Transfers': [14, 11, 7, 5]
+    st.markdown("## 🍪 Consent Withdrawal Heatmap")
+    consent_data = pd.DataFrame({
+        'Department': ['Radiology', 'Oncology', 'Cardiology', 'Neurology', 'Emergency'],
+        'Withdrawals': [3, 7, 2, 4, 2]
     })
-
-    fig2, ax2 = plt.subplots()
-    transfers.set_index('Country').plot.pie(y='Transfers', ax=ax2, legend=False, autopct='%1.1f%%')
-    ax2.set_ylabel("")
+    
+    fig2, ax2 = plt.subplots(figsize=(10, 6))
+    consent_data.set_index('Department')['Withdrawals'].plot(
+        kind='barh', ax=ax2, color='purple', alpha=0.7
+    )
+    ax2.set_title('Consent Withdrawals by Department')
+    ax2.set_xlabel('Number of Withdrawals')
     st.pyplot(fig2)
 
-    st.markdown("## 🧾 Consent Heatmap (Demo)")
-    heatmap_data = pd.DataFrame(
-        [[0.85, 0.75], [0.90, 0.65], [0.80, 0.95]],
-        columns=["Radiology", "Oncology"], index=["Jan", "Feb", "Mar"]
-    )
-    st.dataframe(heatmap_data.style.background_gradient(cmap='Purples'))
+    st.markdown("## 🌍 Cross-Border Transfer Log")
+    transfers = pd.DataFrame({
+        'Date': pd.date_range("2024-06-15", periods=5, freq='D'),
+        'Destination': ['US', 'Canada', 'Switzerland', 'UK', 'Japan'],
+        'Data Type': ['Imaging Data', 'Patient Records', 'Research Data', 'Diagnostic Reports', 'Clinical Trial Data'],
+        'Legal Basis': ['Adequate Decision', 'SCCs', 'Adequate Decision', 'Adequate Decision', 'SCCs']
+    })
+    st.dataframe(transfers, use_container_width=True)
