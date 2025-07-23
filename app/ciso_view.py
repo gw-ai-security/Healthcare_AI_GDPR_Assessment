@@ -1,11 +1,11 @@
 from app.utils.audit_logger import log_action
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-    log_action('demo_user', 'CISO', 'Accessed Dashboard', 'CISO Dashboard')
 def show_ciso_dashboard():
+    log_action('demo_user', 'CISO', 'Accessed Dashboard', 'CISO Dashboard')
+    
     st.title("🧑‍💼 CISO Dashboard – GDPR Security Risk Overview")
 
     st.markdown("""
@@ -26,20 +26,8 @@ def show_ciso_dashboard():
     })
 
     fig, ax = plt.subplots()
-    risky_actions.set_index('Department').plot(kind='bar', ax=ax, legend=False)
-    ax.set_ylabel("Number of Events")
+    risky_actions.set_index('Department')['High-Risk Events'].plot(kind='bar', ax=ax, color='red', alpha=0.7)
+    ax.set_title('High-Risk Events by Department')
+    ax.set_ylabel('Number of Events')
+    plt.xticks(rotation=45)
     st.pyplot(fig)
-
-    st.markdown("## 🌍 Data Export Risk Heatmap")
-    heatmap_data = pd.DataFrame(
-        [[0.1, 0.5, 0.7], [0.3, 0.9, 0.2], [0.6, 0.2, 0.8]],
-        columns=["EU", "US", "Other"], index=["Q1", "Q2", "Q3"]
-    )
-    st.dataframe(heatmap_data.style.background_gradient(cmap='Oranges'))
-
-    st.markdown("## 📉 GDPR Risk Trend Over Time")
-    trend = pd.DataFrame({
-        'Date': pd.date_range("2024-06-01", periods=6, freq="W"),
-        'Risk Score': [60, 63, 67, 69, 72, 72]
-    })
-    st.line_chart(trend.set_index("Date"))
