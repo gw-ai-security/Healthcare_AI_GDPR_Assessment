@@ -1,12 +1,43 @@
-
 [theme]
-base = "light"
-primaryColor = "#1976D2"
-backgroundColor = "#F9FAFB"
-secondaryBackgroundColor = "#E3F2FD"
-textColor = "#000000"
-font = "sans serif"
+# Healthcare/Security themed color scheme
+primaryColor = "#2E8B57"           # Sea Green - für Buttons und Akzente
+backgroundColor = "#FFFFFF"         # Weiß - sauberer Hintergrund
+secondaryBackgroundColor = "#F0F8FF"  # Alice Blue - für Seitenleisten
+textColor = "#1C1C1C"              # Dunkelgrau - für Text
 
 [server]
+# Server-Konfiguration für bessere Performance
 headless = true
 enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 200
+maxMessageSize = 200
+
+[browser]
+# Browser-Verhalten
+gatherUsageStats = false
+showErrorDetails = false
+
+[client]
+# Client-Optimierungen
+caching = true
+displayEnabled = true
+showErrorDetails = false
+
+[logger]
+# Logging-Konfiguration
+level = "info"
+messageFormat = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+[mapbox]
+# Falls Geo-Daten verwendet werden
+token = ""
+
+[deprecation]
+# Deprecation Warnings ausblenden für saubere UI
+showPyplotGlobalUse = false
+showfileUploaderEncoding = false
+
+[global]
+# Globale Einstellungen
+developmentMode = false
