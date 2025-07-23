@@ -27,13 +27,16 @@ def show_ciso_dashboard():
         'High-Risk Events': [15, 9, 6, 12]
     })
 
-    fig, ax = plt.subplots(figsize=(10, 6))
+    # Kleinere Chart-Größe
+    fig, ax = plt.subplots(figsize=(8, 4))
     risky_actions.set_index('Department')['High-Risk Events'].plot(
         kind='bar', ax=ax, color='red', alpha=0.7
     )
-    ax.set_title('High-Risk Events by Department')
-    ax.set_ylabel('Number of Events')
-    plt.xticks(rotation=45)
+    ax.set_title('High-Risk Events by Department', fontsize=12)
+    ax.set_ylabel('Number of Events', fontsize=10)
+    plt.xticks(rotation=45, fontsize=9)
+    plt.yticks(fontsize=9)
+    plt.tight_layout()
     st.pyplot(fig)
 
     st.markdown("## Recent Critical Alerts")
@@ -48,11 +51,15 @@ def show_ciso_dashboard():
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
     risk_scores = [65, 68, 72, 70, 75, 72]
     
-    fig2, ax2 = plt.subplots(figsize=(10, 6))
-    ax2.plot(months, risk_scores, marker='o', linewidth=2, markersize=8, color='orange')
-    ax2.set_title('GDPR Risk Score Trend')
-    ax2.set_ylabel('Risk Score')
+    # Kompaktere Chart
+    fig2, ax2 = plt.subplots(figsize=(8, 3.5))
+    ax2.plot(months, risk_scores, marker='o', linewidth=2, markersize=6, color='orange')
+    ax2.set_title('GDPR Risk Score Trend', fontsize=12)
+    ax2.set_ylabel('Risk Score', fontsize=10)
     ax2.grid(True, alpha=0.3)
+    plt.xticks(fontsize=9)
+    plt.yticks(fontsize=9)
+    plt.tight_layout()
     st.pyplot(fig2)
 
     st.markdown("## Risk Assessment Summary")
