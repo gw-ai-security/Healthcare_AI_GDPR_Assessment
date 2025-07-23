@@ -17,7 +17,7 @@ Healthcare AI systems process **special category data** (GDPR Art. 9) and are cl
 
 ## 🚀 Live Demo Access
 
-### 🔗 **[Access Live Dashboard](YOUR_STREAMLIT_CLOUD_URL_HERE)**
+### 🔗 **[Access Live Dashboard] (https://healthcareaigdprassessment-irbfdahw6bugn7nnymhabz.streamlit.app/)**
 
 ### 🔐 Demo Login Credentials
 
