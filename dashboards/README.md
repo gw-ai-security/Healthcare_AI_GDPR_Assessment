@@ -1,10 +1,10 @@
-# 📊 Healthcare AI GDPR Dashboard – Stakeholder & Compliance Views
+# Healthcare AI GDPR Dashboard – Stakeholder & Compliance Views
 
 This module provides a structured foundation for a GDPR-compliant, stakeholder-aware dashboard designed to monitor AI-driven healthcare systems. It extends the use cases and detection logic from Project 1.2 and connects them with real-time, role-specific risk visibility and compliance mapping.
 
 ---
 
-## 🎯 Objective
+## Objective
 
 To visualize and operationalize:
 - GDPR violations and SIEM alerts
@@ -14,7 +14,7 @@ To visualize and operationalize:
 
 ---
 
-## 📁 Contents
+## Contents
 
 | File                            | Purpose                                                              |
 |----------------------------------|----------------------------------------------------------------------|
@@ -24,20 +24,20 @@ To visualize and operationalize:
 
 ---
 
-## 🧠 Roles & Views
+## Roles & Views
 
 Each dashboard view is mapped to the needs of:
 
-- **🧑‍💼 CISO:** Risk trends, incident KPIs, ROI
-- **👩‍⚖️ DPO:** Consent violations, GDPR Article breakdown
-- **🧑‍💻 SOC Analyst:** Real-time alerts, rule hits, MTTR
-- **🧾 Auditor:** Art. 30 exports, documentation completeness
+- **CISO:** Risk trends, incident KPIs, ROI
+- **DPO:** Consent violations, GDPR Article breakdown
+- **SOC Analyst:** Real-time alerts, rule hits, MTTR
+- **Auditor:** Art. 30 exports, documentation completeness
 
-➡️ See [`stakeholder_views.md`](./stakeholder_views.md) for full role breakdown.
+See [`stakeholder_views.md`](./stakeholder_views.md) for full role breakdown.
 
 ---
 
-## 🔐 Security Architecture Overview
+## Security Architecture Overview
 
 Key features include:
 
@@ -47,11 +47,11 @@ Key features include:
 - Data minimization and pseudonymization
 - Article 30 traceability
 
-➡️ See [`security_architecture.md`](./security_architecture.md) for technical details.
+See [`security_architecture.md`](./security_architecture.md) for technical details.
 
 ---
 
-## ✅ Compliance Traceability
+##  Compliance Traceability
 
 This dashboard directly supports:
 
@@ -63,20 +63,20 @@ This dashboard directly supports:
 | EU AI Act (Annex III) | High-risk classification reporting |
 | ISO/IEC 27001      | Annex A.9, A.12 – Logging, Access      |
 
-➡️ See [`compliance_mapping.md`](./compliance_mapping.md) for full traceability chain.
+➡ See [`compliance_mapping.md`](./compliance_mapping.md) for full traceability chain.
 
 ---
 
-## 🛠️ Next Development Steps
+##  Next Development Steps
 
-- 🔧 `main.py` + Streamlit dashboard routing
-- 🎛️ Individual role views (`ciso_view.py`, `dpo_view.py`, etc.)
-- 📊 Data integration (log parsing, KPIs, charting)
-- 🧾 Export features (PDF, CSV) per stakeholder
+-  `main.py` + Streamlit dashboard routing
+-  Individual role views (`ciso_view.py`, `dpo_view.py`, etc.)
+-  Data integration (log parsing, KPIs, charting)
+-  Export features (PDF, CSV) per stakeholder
 
 ---
 
-## 📦 How to Use
+## How to Use
 
 Once deployed (e.g., via Streamlit Cloud or container), the dashboard provides:
 - Secure login
@@ -86,7 +86,7 @@ Once deployed (e.g., via Streamlit Cloud or container), the dashboard provides:
 
 ---
 
-## 💡 Tip
+## Tip
 
 This folder complements the rule logic from `/docs/Detection_Rules.md`  
 and the audit reporting in `/docs/Audit_Report.md`.
