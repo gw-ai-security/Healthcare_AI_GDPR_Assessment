@@ -1,4 +1,4 @@
-from app.utils.audit_logger import log_action
+from utils.audit_logger import log_action
 import streamlit as st
 import pandas as pd
 import matplotlib
