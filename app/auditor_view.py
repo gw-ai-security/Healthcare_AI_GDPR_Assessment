@@ -1,9 +1,11 @@
-from utils.audit_logger import log_action
+from utils.audit_logger import log_action, AUDIT_LOG_PATH
 import streamlit as st
 import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import os
+from datetime import datetime, timedelta
 
 def show_auditor_dashboard():
     log_action('demo_user', 'AUDITOR', 'Accessed Dashboard', 'Auditor Dashboard')
@@ -21,6 +23,71 @@ def show_auditor_dashboard():
     col2.metric("Access Log Completeness", "98%", "+1%")
     col3.metric("Manual Overrides", "2", "0")
 
+    # NEW: Live Audit Log Section
+    st.markdown("## Live Audit Log (GDPR Art. 30 Compliance)")
+    
+    if os.path.exists(AUDIT_LOG_PATH):
+        try:
+            audit_df = pd.read_csv(AUDIT_LOG_PATH)
+            
+            # Show recent entries
+            st.subheader("Recent Audit Entries (Last 50)")
+            recent_entries = audit_df.tail(50).sort_values('timestamp', ascending=False)
+            st.dataframe(recent_entries, use_container_width=True)
+            
+            # Summary statistics
+            col1, col2, col3, col4 = st.columns(4)
+            col1.metric("Total Log Entries", len(audit_df))
+            col2.metric("Unique Users", audit_df['user'].nunique())
+            col3.metric("Unique Roles", audit_df['role'].nunique())
+            col4.metric("Today's Activities", len(audit_df[audit_df['timestamp'].str.contains(datetime.now().strftime('%Y-%m-%d'))]))
+            
+            # Activity breakdown by role
+            st.subheader("Audit Activity Breakdown by Role")
+            role_activity = audit_df['role'].value_counts()
+            
+            fig_roles, ax_roles = plt.subplots(figsize=(10, 6))
+            role_activity.plot(kind='bar', ax=ax_roles, color='steelblue', alpha=0.8)
+            ax_roles.set_title('Audit Log Activities by Role')
+            ax_roles.set_ylabel('Number of Activities')
+            ax_roles.set_xlabel('Role')
+            plt.xticks(rotation=45)
+            st.pyplot(fig_roles)
+            
+            # Download functionality
+            st.subheader("Export Audit Log")
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                if st.download_button(
+                    label="Download Complete Audit Log (CSV)",
+                    data=audit_df.to_csv(index=False),
+                    file_name=f"audit_log_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                    mime="text/csv"
+                ):
+                    log_action('demo_user', 'AUDITOR', 'Downloaded Audit Log', 'Auditor Dashboard')
+            
+            with col2:
+                # Filtered export (last 30 days)
+                thirty_days_ago = datetime.now() - timedelta(days=30)
+                recent_df = audit_df[pd.to_datetime(audit_df['timestamp']) >= thirty_days_ago]
+                
+                if st.download_button(
+                    label="Download Last 30 Days (CSV)",
+                    data=recent_df.to_csv(index=False),
+                    file_name=f"audit_log_last30days_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                    mime="text/csv"
+                ):
+                    log_action('demo_user', 'AUDITOR', 'Downloaded 30-day Audit Log', 'Auditor Dashboard')
+                    
+        except Exception as e:
+            st.error(f"Error loading audit log: {str(e)}")
+            st.info("Audit log will be created automatically as users interact with the system.")
+    else:
+        st.info("No audit log file found yet. The log will be created automatically as users interact with the system.")
+        st.info(f"Expected location: {AUDIT_LOG_PATH}")
+
+    # Rest of the existing code remains the same...
     st.markdown("## Export Events Without Legal Basis")
     exports = pd.DataFrame({
         'Date': pd.date_range("2024-06-10", periods=5, freq='D'),
@@ -48,6 +115,7 @@ def show_auditor_dashboard():
     plt.xticks(rotation=45)
     st.pyplot(fig1)
 
+    # Continue with rest of existing auditor_view.py code...
     st.markdown("## Data Subject Access Requests (DSAR)")
     dsar_data = pd.DataFrame({
         'Month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
