@@ -7,7 +7,7 @@
 
 > **A consulting-ready, audit-grade dashboard framework for GDPR and EU AI Act compliance in healthcare AI systems**
 
-## 🎯 Project Overview
+## Project Overview
 
 This project delivers a **complete, realistic, portfolio-ready framework** simulating a full consulting engagement for healthcare AI systems. It provides role-based dashboards for compliance monitoring, audit trail management, and real-time GDPR violation detection.
 
@@ -15,11 +15,11 @@ This project delivers a **complete, realistic, portfolio-ready framework** simul
 
 Healthcare AI systems process **special category data** (GDPR Art. 9) and are classified as **High-Risk AI Systems** under the **EU AI Act (2024)**. Non-compliance penalties can reach **€20 million or 4% of global turnover**.
 
-## 🚀 Live Demo Access
+## Live Demo Access
 
-### 🔗 **[Access Live Dashboard] (https://healthcareaigdprassessment-irbfdahw6bugn7nnymhabz.streamlit.app/)**
+###  **[Access Live Dashboard] (https://healthcareaigdprassessment-irbfdahw6bugn7nnymhabz.streamlit.app/)**
 
-### 🔐 Demo Login Credentials
+### Demo Login Credentials
 
 | Role | Username | Password | Access Level |
 |------|----------|----------|--------------|
@@ -28,7 +28,7 @@ Healthcare AI systems process **special category data** (GDPR Art. 9) and are cl
 | **SOC Analyst** | `soc_user` | `soc123` | Real-time alerts, rule effectiveness |
 | **Auditor** | `auditor_user` | `audit123` | Audit trails, compliance reporting |
 
-## 📊 Dashboard Screenshots
+## Dashboard Screenshots
 
 ### CISO Dashboard - Security Risk Overview
 *Risk metrics, department-wise threat analysis, and incident tracking*
@@ -42,32 +42,32 @@ Healthcare AI systems process **special category data** (GDPR Art. 9) and are cl
 ### Auditor Dashboard - Compliance Documentation
 *Live audit logs, Art. 30 records, DSAR tracking with CSV export*
 
-## ✨ Key Features
+## Key Features
 
-### 🛡️ **Role-Based Access Control**
+### **Role-Based Access Control**
 - Secure login system with role-specific dashboards
 - Comprehensive audit logging (GDPR Art. 30 compliant)
 - Session management and logout functionality
 
-### 📈 **Real-Time Monitoring**
+### **Real-Time Monitoring**
 - Live GDPR violation tracking
 - Interactive charts and metrics
 - Department-wise risk analysis
 - 24-hour alert volume trends
 
-### 📋 **Audit & Compliance**
+### **Audit & Compliance**
 - **Live audit log display** with CSV export
 - Article 30 record completeness tracking
 - Data Subject Access Request (DSAR) management
 - Cross-border transfer monitoring
 
-### 🎨 **Professional UI/UX**
+### **Professional UI/UX**
 - Healthcare-themed color scheme
 - Responsive design with custom CSS
 - Interactive data tables
 - Download functionality for reports
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Tech Stack
 - **Frontend:** Streamlit with custom CSS styling
@@ -94,7 +94,7 @@ Healthcare_AI_GDPR_Assessment/
 └── requirements.txt              # Python dependencies
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Local Installation
 
@@ -121,7 +121,7 @@ Healthcare_AI_GDPR_Assessment/
 
 [![Deploy to Streamlit Cloud](https://img.shields.io/badge/Deploy%20to-Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=streamlit)](https://share.streamlit.io/)
 
-## 📋 Compliance Coverage
+## Compliance Coverage
 
 ### GDPR Articles Implemented
 - **Art. 5:** Principles of processing (data minimization tracking)
@@ -138,7 +138,7 @@ Healthcare_AI_GDPR_Assessment/
 - Transparency and explainability measures
 - Risk management system documentation
 
-## 🎓 Business Value & Use Cases
+## Business Value & Use Cases
 
 ### For Compliance Officers
 - Real-time GDPR compliance monitoring
@@ -166,7 +166,7 @@ Healthcare_AI_GDPR_Assessment/
 - **Article 30 Coverage:** 92%+ documentation completeness
 - **DSAR Response Time:** Automated tracking and reporting
 
-## 🔧 Customization & Extension
+## Customization & Extension
 
 ### Adding New Dashboards
 1. Create new view file in `/app/`
@@ -187,7 +187,7 @@ Modify `audit_logger.py` to add:
 - Logo and branding elements
 - Custom chart themes
 
-## 📁 Documentation
+## Documentation
 
 ### Comprehensive Guides Available
 - `/docs/Business_Use_Case.md` - Healthcare AI scenarios
@@ -196,7 +196,7 @@ Modify `audit_logger.py` to add:
 - `/docs/Audit_Report.md` - Executive summary template
 - `/framework/` - Reusable consulting templates
 
-## 👥 Target Audience
+## Target Audience
 
 ### Primary Users
 - **Data Protection Officers (DPOs)**
@@ -210,7 +210,7 @@ Modify `audit_logger.py` to add:
 - **Consulting Engagements:** Ready-to-deploy framework
 - **Training & Education:** Real-world compliance scenarios
 
-## 🏆 Professional Highlights
+## Professional Highlights
 
 ### Consulting-Ready Features
 - ✅ Executive-level dashboards with business KPIs
@@ -228,13 +228,13 @@ Modify `audit_logger.py` to add:
 - ✅ Comprehensive error handling and logging
 - ✅ Scalable architecture for enterprise deployment
 
-## 📄 License & Usage
+## License & Usage
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Commercial Use:** Freely available for consulting, portfolio, and commercial projects.
 
-## 👨‍💻 Author & Contact
+## Author & Contact
 
 **Georg Wiesmuller**
 - GitHub: [@gw-ai-security](https://github.com/gw-ai-security)
@@ -245,7 +245,7 @@ Open an [Issue](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Try the Live Demo:** Use the credentials above to explore all dashboards
 2. **Review Documentation:** Check `/docs/` for detailed compliance guides  
