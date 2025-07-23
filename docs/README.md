@@ -1,4 +1,4 @@
-# 📚 Documentation – Healthcare AI GDPR Compliance Project
+# Documentation – Healthcare AI GDPR Compliance Project
 
 This `/docs` folder contains the structured documentation and consulting deliverables for the Healthcare AI Security & GDPR Compliance Assessment.
 
@@ -6,7 +6,7 @@ The documents are organized into thematic modules aligned with GDPR principles, 
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 | Folder               | Description                                                           |
 |----------------------|-----------------------------------------------------------------------|
@@ -19,17 +19,17 @@ The documents are organized into thematic modules aligned with GDPR principles, 
 
 ---
 
-## 🟢 `00_Use_Case/` – Use Case Definition & Stakeholder Roles
+## `00_Use_Case/` – Use Case Definition & Stakeholder Roles
 
 - `Business_Use_Case.md`: Real-world AI healthcare scenario (radiology diagnostics)  
 - `GDPR_Requirements.md`: Relevant GDPR Articles (Art. 5, 7, 9, 25, 32, 44)  
 - `Stakeholder_Analysis.md`: Roles incl. CISO, DPO, AI Product Owner  
 
-📂 Subfolder: `00_Case_Studies/` → for future use
+Subfolder: `00_Case_Studies/` → for future use
 
 ---
 
-## 🟣 `01_Regulatory_Context/` – Legal Landscape & AI Threats
+##  `01_Regulatory_Context/` – Legal Landscape & AI Threats
 
 - `regulatory-context.md`: Summary of applicable legal frameworks (GDPR, AI Act, HIPAA)  
 - `technical-organizational-measures.md`: Access controls, encryption, pseudonymization  
@@ -37,13 +37,13 @@ The documents are organized into thematic modules aligned with GDPR principles, 
 
 ---
 
-## 🔵 `02_Dataflow/` – Transparency & Traceability
+##  `02_Dataflow/` – Transparency & Traceability
 
 - `data-flow.md`: Data processing path and system boundaries (Mermaid/draw.io)
 
 ---
 
-## 🟠 `03_Checklists/` – GDPR Compliance Verification
+##  `03_Checklists/` – GDPR Compliance Verification
 
 - `GDPR_Checklist.md`: Operationalized checklist of GDPR controls (Art. 5, 25, 32...)  
 - `Field_GDPR_Mapping.md`: Mapping data fields ↔ GDPR legal basis  
@@ -52,7 +52,7 @@ The documents are organized into thematic modules aligned with GDPR principles, 
 
 ---
 
-## 🔴 `04_Detection_Rules/` – SIEM Logic, DSFA & Use Cases
+##  `04_Detection_Rules/` – SIEM Logic, DSFA & Use Cases
 
 - `Detection_Rules.md`: 5–7 GDPR-relevant SIEM detection rules  
 - `use-cases.md`: Use case descriptions incl. severity and response  
@@ -62,7 +62,7 @@ The documents are organized into thematic modules aligned with GDPR principles, 
 
 ---
 
-## 🧾 `99_Audit_Report/` – Executive-Ready Output
+##  `99_Audit_Report/` – Executive-Ready Output
 
 - `Audit_Report.md`: Structured summary incl.  
   - GDPR violations detected  
@@ -73,7 +73,7 @@ The documents are organized into thematic modules aligned with GDPR principles, 
 
 ---
 
-## ✅ How to Use
+##  How to Use
 
 - For **auditors**: start at `Audit_Report.md`  
 - For **security architects**: go to `Detection_Rules.md` + `Threat_Model.md`  
@@ -81,7 +81,7 @@ The documents are organized into thematic modules aligned with GDPR principles, 
 
 ---
 
-## 📎 Recommended Entry Points
+##  Recommended Entry Points
 
 - [Use Case & Stakeholders](./00_Use_Case/Business_Use_Case.md)  
 - [Detection Logic](./04_Detection_Rules/Detection_Rules.md)  
