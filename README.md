@@ -117,9 +117,6 @@ Healthcare_AI_GDPR_Assessment/
 4. **Access the dashboard:**
    Open `http://localhost:8501` and use demo credentials above
 
-### Streamlit Cloud Deployment
-
-[![Deploy to Streamlit Cloud](https://img.shields.io/badge/Deploy%20to-Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=streamlit)](https://share.streamlit.io/)
 
 ## Compliance Coverage
 
