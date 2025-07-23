@@ -28,12 +28,16 @@ def show_soc_dashboard():
         'Description': ['Unauthorized Access Attempt', 'Data Export Without Consent', 'Failed Authentication', 'Unusual Data Volume', 'Cross-border Transfer']
     })
 
-    fig1, ax1 = plt.subplots(figsize=(10, 6))
+    # Kompakter horizontal chart
+    fig1, ax1 = plt.subplots(figsize=(7, 3.5))
     rule_hits.set_index('Rule ID')['Hits'].plot(
         kind='barh', ax=ax1, color='skyblue', alpha=0.8
     )
-    ax1.set_title('Rule Hit Frequency')
-    ax1.set_xlabel('Number of Hits')
+    ax1.set_title('Rule Hit Frequency', fontsize=12)
+    ax1.set_xlabel('Number of Hits', fontsize=10)
+    plt.xticks(fontsize=9)
+    plt.yticks(fontsize=9)
+    plt.tight_layout()
     st.pyplot(fig1)
 
     st.dataframe(rule_hits, use_container_width=True)
@@ -52,14 +56,19 @@ def show_soc_dashboard():
     hours = list(range(0, 24))
     alert_counts = [2, 1, 0, 1, 3, 2, 4, 6, 8, 12, 15, 18, 22, 25, 20, 18, 16, 14, 12, 10, 8, 6, 4, 3]
     
-    fig2, ax2 = plt.subplots(figsize=(12, 6))
-    ax2.plot(hours, alert_counts, marker='o', linewidth=2, color='red', alpha=0.7)
-    ax2.set_title('24-Hour Alert Volume')
-    ax2.set_xlabel('Hour of Day')
-    ax2.set_ylabel('Number of Alerts')
+    # Viel kompakter für 24h Trend
+    fig2, ax2 = plt.subplots(figsize=(9, 3))
+    ax2.plot(hours, alert_counts, marker='o', linewidth=2, markersize=4, color='red', alpha=0.7)
+    ax2.set_title('24-Hour Alert Volume', fontsize=12)
+    ax2.set_xlabel('Hour of Day', fontsize=10)
+    ax2.set_ylabel('Alerts', fontsize=10)
     ax2.grid(True, alpha=0.3)
+    plt.xticks(fontsize=8)
+    plt.yticks(fontsize=8)
+    plt.tight_layout()
     st.pyplot(fig2)
 
+    # Rest der Tabellen bleibt gleich...
     st.markdown("## Security Incident Summary")
     incidents = pd.DataFrame({
         'Incident Type': ['Data Breach Attempt', 'Unauthorized Access', 'System Compromise', 'Policy Violation'],
