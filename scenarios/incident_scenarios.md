@@ -1,10 +1,10 @@
-# 🚨 Healthcare AI – Incident Scenarios
+# Healthcare AI – Incident Scenarios
 
 This document describes simulated incidents for testing the Security Analytics Dashboard, designed around GDPR-relevant threats in healthcare-AI systems.
 
 ---
 
-## 🩺 Scenario 01 – Medical Device Compromise
+## Scenario 01 – Medical Device Compromise
 - **Description:** External attacker exploits vulnerability in a connected radiology device (e.g., DICOM server), triggering unauthorized data exfiltration.
 - **GDPR Impact:** Article 32 (Integrity & Confidentiality)
 - **Patient Impact:** Exposure of diagnostic images without consent
@@ -13,7 +13,7 @@ This document describes simulated incidents for testing the Security Analytics D
 
 ---
 
-## 🕵️ Scenario 02 – Insider Access to EHR Logs
+## Scenario 02 – Insider Access to EHR Logs
 - **Description:** Clinician accesses patient records outside treatment relationship.
 - **GDPR Impact:** Article 5(1)(c) (Data Minimization), Art. 9 (Special Category)
 - **Patient Impact:** Unjustified privacy violation
@@ -22,7 +22,7 @@ This document describes simulated incidents for testing the Security Analytics D
 
 ---
 
-## 🎭 Scenario 03 – AI Model Drift and Misclassification
+## Scenario 03 – AI Model Drift and Misclassification
 - **Description:** A deployed AI model starts misclassifying consent statuses due to data drift.
 - **GDPR Impact:** Article 25 (Privacy by Design), Art. 22 (Automated Decision-Making)
 - **Patient Impact:** Data used without valid consent
@@ -31,7 +31,7 @@ This document describes simulated incidents for testing the Security Analytics D
 
 ---
 
-## 🌐 Scenario 04 – Non-EU Transfer without Safeguards
+## Scenario 04 – Non-EU Transfer without Safeguards
 - **Description:** Data exported to a US-based research partner without SCC or valid consent.
 - **GDPR Impact:** Article 44 (Transfers to Third Countries)
 - **Patient Impact:** Potential unlawful cross-border processing
@@ -40,7 +40,7 @@ This document describes simulated incidents for testing the Security Analytics D
 
 ---
 
-## 💉 Scenario 05 – Adversarial Attack on AI Input
+## Scenario 05 – Adversarial Attack on AI Input
 - **Description:** Manipulated input leads AI system to misdiagnose and trigger faulty alerts.
 - **GDPR Impact:** Article 5(1)(d) (Accuracy), Art. 25 (Security by Design)
 - **Patient Impact:** Wrong medical decision, potential liability
