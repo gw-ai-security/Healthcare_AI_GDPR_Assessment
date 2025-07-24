@@ -1,10 +1,10 @@
-# ✅ Compliance Mapping – GDPR ↔ SIEM Rule ↔ Dashboard ↔ Business Impact
+# Compliance Mapping – GDPR ↔ SIEM Rule ↔ Dashboard ↔ Business Impact
 
 This matrix maps GDPR articles to specific detection rules, affected dashboard views, and the estimated business impact in case of non-compliance.
 
 ---
 
-## 📊 Compliance Mapping Table
+## Compliance Mapping Table
 
 | GDPR Article | SIEM Rule ID                  | Dashboard View      | Description                                       | Business Impact (€)        |
 |--------------|-------------------------------|---------------------|---------------------------------------------------|-----------------------------|
@@ -16,7 +16,7 @@ This matrix maps GDPR articles to specific detection rules, affected dashboard v
 
 ---
 
-## 🧠 Use Case to Regulation Summary
+## Use Case to Regulation Summary
 
 | Use Case                          | Rule ID       | Primary GDPR Article(s)   | Dashboard View |
 |----------------------------------|---------------|----------------------------|----------------|
@@ -28,7 +28,7 @@ This matrix maps GDPR articles to specific detection rules, affected dashboard v
 
 ---
 
-## 💡 Notes
+## Notes
 
 - **High Risk**: RULE_004 (Art. 44) has the highest fine potential under GDPR.
 - **Cross-Mapping**: Several dashboard views (e.g., CISO & DPO) overlap in rule visibility but differ in access granularity.
