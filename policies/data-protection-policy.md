@@ -4,44 +4,44 @@ _This policy establishes the principles and rules for protecting personal data p
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To ensure that all personal data, especially special categories (e.g. health data), is processed lawfully, fairly, transparently, and securely.
 
 ---
 
-## 📌 Scope
+## Scope
 - Applies to all employees, contractors, and third parties who process personal data on behalf of the organization.
 - Covers all data processing activities, systems, and services.
 
 ---
 
-## 📌 Principles of Data Protection
+## Principles of Data Protection
 
-1️⃣ **Lawfulness, Fairness, and Transparency**  
+1️-**Lawfulness, Fairness, and Transparency**  
 - Data must be processed lawfully and in a transparent manner.
 
-2️⃣ **Purpose Limitation**  
+2-**Purpose Limitation**  
 - Data collected for specified, explicit, legitimate purposes.  
 - No further processing incompatible with those purposes.
 
-3️⃣ **Data Minimization**  
+3-**Data Minimization**  
 - Adequate, relevant, and limited to what is necessary.
 
-4️⃣ **Accuracy**  
+4-**Accuracy**  
 - Kept accurate and up-to-date.
 
-5️⃣ **Storage Limitation**  
+5-**Storage Limitation**  
 - Retained only as long as necessary.
 
-6️⃣ **Integrity and Confidentiality**  
+6-**Integrity and Confidentiality**  
 - Processed securely to prevent unauthorized access, loss, or damage.
 
-7️⃣ **Accountability**  
+7-**Accountability**  
 - Organization must demonstrate compliance with these principles.
 
 ---
 
-## 📌 Roles and Responsibilities
+## Roles and Responsibilities
 
 - **Data Protection Officer (DPO):** Oversight of compliance.  
 - **Security Team:** Implement technical safeguards.  
@@ -50,7 +50,7 @@ To ensure that all personal data, especially special categories (e.g. health dat
 
 ---
 
-## 📌 Security Measures
+## Security Measures
 - Encryption and pseudonymization.  
 - Access control and authentication.  
 - Secure storage and transmission.  
@@ -59,7 +59,7 @@ To ensure that all personal data, especially special categories (e.g. health dat
 
 ---
 
-## 📌 Data Subject Rights
+## Data Subject Rights
 - Right to access.  
 - Right to rectification.  
 - Right to erasure (“right to be forgotten”).  
@@ -71,25 +71,25 @@ Requests should be promptly escalated to the DPO.
 
 ---
 
-## 📌 Data Breach Notification
+## Data Breach Notification
 - Incidents must be reported immediately to the Security Team and DPO.
 - Breaches assessed for GDPR Art. 33/34 notification requirements.
 
 ---
 
-## 📌 Training and Awareness
+## Training and Awareness
 - All staff must complete data protection training annually.
 - Specialized training for high-risk roles.
 
 ---
 
-## 📌 Review and Updates
+## Review and Updates
 - Reviewed annually by the DPO.  
 - Updated to reflect changes in regulation, risk, or operations.
 
 ---
 
-## ✅ Approval
+## Approval
 - **Document Owner:** DPO
 - **Version:** 1.0
 - **Approval Date:** [Insert Date]
