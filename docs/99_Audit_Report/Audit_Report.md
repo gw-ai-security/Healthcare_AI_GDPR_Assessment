@@ -97,6 +97,3 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-**Prepared by:**  
-AI Security & Privacy Assessment – Compliance Playbook v1.0  
-Generated with GPT-4 + Custom AI Security Consultant Framework
