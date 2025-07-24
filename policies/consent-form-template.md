@@ -4,12 +4,12 @@ _This template helps ensure GDPR-compliant, informed, and explicit consent for d
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To document that the data subject has been fully informed about the data processing and has given explicit, voluntary consent.
 
 ---
 
-## 📌 Basic Information
+## Basic Information
 
 - **Data Controller:** [Organization Name]
 - **Contact Details:** [Email / Phone / Address]
@@ -17,7 +17,7 @@ To document that the data subject has been fully informed about the data process
 
 ---
 
-## 📌 Description of Processing
+## Description of Processing
 
 - **Purpose:** [Describe clearly why data is being collected.]
 - **Categories of Data:** [e.g. health data, contact info]
@@ -26,21 +26,21 @@ To document that the data subject has been fully informed about the data process
 
 ---
 
-## 📌 Data Sharing
+## Data Sharing
 
 - [List any third parties or processors.]
 - [Include details of any non-EU transfers and safeguards.]
 
 ---
 
-## 📌 Retention Period
+## Retention Period
 
 - [Specify how long data will be kept.]
 - [Describe deletion or anonymization process.]
 
 ---
 
-## 📌 Rights of the Data Subject
+## Rights of the Data Subject
 
 - Right to withdraw consent at any time without affecting prior processing.
 - Right to access, rectify, erase, restrict processing.
@@ -48,16 +48,16 @@ To document that the data subject has been fully informed about the data process
 
 ---
 
-## 📌 How to Withdraw Consent
+## How to Withdraw Consent
 
 - Contact us at [Email/Phone].
 - Requests will be processed within [X] days.
 
 ---
 
-## 📌 Declaration of Consent
+## Declaration of Consent
 
-✅ I confirm that:
+I confirm that:
 - I have read and understood the above information.
 - I voluntarily consent to the described processing of my personal data.
 
