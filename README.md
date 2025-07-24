@@ -155,7 +155,7 @@ Healthcare_AI_GDPR_Assessment/
 - Regulatory audit preparation
 - Risk mitigation strategies
 
-## 📊 Key Metrics & KPIs
+## Key Metrics & KPIs
 
 - **Overall GDPR Risk Score:** Dynamic calculation based on violations
 - **Audit Log Completeness:** 98%+ coverage for all user activities  
