@@ -75,11 +75,11 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 - [Business Use Case](../00_Use_Case/Business_Use_Case.md)
 - [Stakeholder Map](../00_Use_Case/Stakeholder_Analysis.md)
-- [Detection Rules](../docs/Detection_Rules.md)
-- [DSFA Outline](../docs/DSFA_Outline.md)
-- [GDPR Checklist](../docs/GDPR_Checklist.md)
-- [Threat Model](../docs/Threat_Model.md)
-- [Rule Mapping Table](../notebooks/06_Modul3_Rule_Mapping_FIXED.ipynb)
+- [Detection Rules](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/blob/main/docs/04_Detection_Rules/Detection_Rules.md)
+- [DSFA Outline](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/blob/main/docs/04_Detection_Rules/DSFA_Outline.md)
+- [GDPR Checklist](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/blob/main/docs/03_Checklists/GDPR_Checklist.md)
+- [Threat Model](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/blob/main/docs/03_Checklists/Threat_Model.md)
+- [Rule Mapping Table](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/blob/main/notebooks/06_Rule_Mapping.ipynb)
 
 ---
 
