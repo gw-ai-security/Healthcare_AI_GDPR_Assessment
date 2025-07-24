@@ -23,7 +23,7 @@ Monitor overall security posture, GDPR-related risk exposure, and ROI from imple
 - AI Drift / Misuse Map
 - Non-EU Transfers Heatmap
 
-### ⚙Controls
+### Controls
 - Enable/disable anomaly detection modules
 - Drill-down into high-risk alerts
 - Export Executive Summary
@@ -35,7 +35,7 @@ Monitor overall security posture, GDPR-related risk exposure, and ROI from imple
 ### Purpose
 Ensure lawful processing, consent compliance, and GDPR Article accountability.
 
-### 📊 KPIs
+### KPIs
 - Active Consent Violations
 - Article 9 Data Exposures
 - Art. 44 Transfers Without SCC
