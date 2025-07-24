@@ -1,16 +1,16 @@
-# 🧯 AI Incident Response Playbook
+# AI Incident Response Playbook
 
 _Use this template to manage privacy/security incidents involving AI systems handling personal or health data._
 
 ---
 
-### 🎯 Purpose
+### Purpose
 
 Ensure a structured, auditable, GDPR-aligned process for responding to AI-specific incidents (e.g. data poisoning, consent violations, unauthorized access).
 
 ---
 
-### 🧭 1. Scope
+### 1. Scope
 
 | Field                 | Entry                          |
 |----------------------|---------------------------------|
@@ -20,11 +20,11 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 | **Security Lead**    |                                 |
 | **Version / Updated**|                                 |
 
-✅ *Specify which AI systems and data flows are in scope.*
+*Specify which AI systems and data flows are in scope.*
 
 ---
 
-### ⚠️ 2. Incident Types
+### 2. Incident Types
 
 | Category                 | Description                                       |
 |--------------------------|---------------------------------------------------|
@@ -36,11 +36,11 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 | **Cross-Border Issue**   | Non-EU transfers without safeguards              |
 | **Bias Discovery**       | Algorithmic discrimination uncovered             |
 
-✅ *Adapt based on your specific use cases.*
+*Adapt based on your specific use cases.*
 
 ---
 
-### 🛰️ 3. Detection & Triage
+### 3. Detection & Triage
 
 **Detection Sources:**
 - SIEM alerts  
@@ -57,7 +57,7 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 
 ---
 
-### 🚨 4. Response Steps
+### 4. Response Steps
 
 | Phase         | Actions |
 |---------------|---------|
@@ -69,7 +69,7 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 
 ---
 
-### 👥 5. Roles & Responsibilities
+### 5. Roles & Responsibilities
 
 | Role                | Responsibility                            |
 |---------------------|--------------------------------------------|
@@ -82,7 +82,7 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 
 ---
 
-### 📡 6. Communication Plan
+### 6. Communication Plan
 
 | Stage                | Details                                     |
 |----------------------|---------------------------------------------|
@@ -93,7 +93,7 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 
 ---
 
-### 🔎 7. Post-Incident Review
+### 7. Post-Incident Review
 
 - Timeline of events  
 - Root cause  
@@ -106,7 +106,7 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 
 ---
 
-### 🖋️ 8. Sign-off
+### 8. Sign-off
 
 | Role               | Name             | Date       |
 |--------------------|------------------|------------|
@@ -117,7 +117,7 @@ Ensure a structured, auditable, GDPR-aligned process for responding to AI-specif
 
 ---
 
-### ✅ Outcome
+### Outcome
 
 - Demonstrates compliance with **GDPR Art. 32: Security of Processing**
 - Enables repeatable, auditable incident management  
