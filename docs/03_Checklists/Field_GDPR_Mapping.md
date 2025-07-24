@@ -4,12 +4,12 @@ This document maps specific data fields in the Healthcare AI system logs to GDPR
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To demonstrate how each data field is covered by GDPR requirements, making compliance checks auditable and clear.
 
 ---
 
-## 📌 Mapping Table
+## Mapping Table
 
 | Field Name       | GDPR Article / Principle             | Compliance Requirement                                         | Notes / Observations                   |
 |-------------------|-------------------------------------|----------------------------------------------------------------|----------------------------------------|
@@ -25,14 +25,14 @@ To demonstrate how each data field is covered by GDPR requirements, making compl
 
 ---
 
-## ✅ Notes on Use
+## Notes on Use
 - This table is designed to be reviewed with the DPO and Security teams.
 - Observations should be updated with real system checks.
 - Helps create clear audit trails and mitigation plans.
 
 ---
 
-## 📌 Outcome
+## Outcome
 A documented, traceable mapping of all logged data fields to GDPR requirements:
 - Supports Privacy by Design reviews.
 - Helps identify compliance gaps.
