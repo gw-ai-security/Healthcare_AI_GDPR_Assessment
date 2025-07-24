@@ -1,4 +1,4 @@
-# 📌 Use Case Mapping Overview
+# Use Case Mapping Overview
 
 This table provides an **overview** of how each SIEM Use Case maps to key regulatory requirements (GDPR, EU AI Act, HIPAA).
 
@@ -14,12 +14,11 @@ This table provides an **overview** of how each SIEM Use Case maps to key regula
 
 ---
 
-## ✅ Legend
+## Legend
 - **GDPR:** EU General Data Protection Regulation
 - **EU AI Act:** High-Risk System Requirements
 - **HIPAA:** US Health Insurance Portability and Accountability Act
 
 ---
 
-*Version 1.0 – Georg Wiesmüller*
 
