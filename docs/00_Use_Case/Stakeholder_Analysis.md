@@ -4,12 +4,12 @@ This document identifies and describes the key stakeholders involved in the Heal
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To ensure effective communication and alignment with all key roles throughout the assessment, ensuring business, legal, technical, and clinical requirements are considered.
 
 ---
 
-## 📌 Stakeholder Table
+## Stakeholder Table
 
 | Stakeholder           | Interest                      | Influence | Communication Strategy             | Deliverables                        |
 |------------------------|------------------------------|-----------|------------------------------------|-------------------------------------|
@@ -23,7 +23,7 @@ To ensure effective communication and alignment with all key roles throughout th
 
 ---
 
-## ✅ Notes on Roles
+## Notes on Roles
 
 - **DPO:** Legal authority for GDPR compliance, ensures audit-readiness.
 - **CMO:** Represents patient interests, ensures clinical relevance.
@@ -35,7 +35,7 @@ To ensure effective communication and alignment with all key roles throughout th
 
 ---
 
-## ✅ Communication Plan
+## Communication Plan
 - Weekly status updates with Product and Security teams.
 - Formal DSFA and Privacy by Design reviews with DPO and Legal.
 - Executive Summary for CISO and management board.
@@ -43,7 +43,7 @@ To ensure effective communication and alignment with all key roles throughout th
 
 ---
 
-## 📌 Outcome
+## Outcome
 A clear, shared understanding of:
 - Roles and responsibilities
 - Expected deliverables
