@@ -1,12 +1,12 @@
-# 🛡️ Threat Model – Healthcare AI System (GDPR & SIEM Context)
+# Threat Model – Healthcare AI System (GDPR & SIEM Context)
 
-## 🎯 Purpose
+## Purpose
 
 This threat model aims to identify and structure key attack vectors in the context of a GDPR-regulated Healthcare AI system. It follows the STRIDE methodology and highlights risks relevant to log integrity, user consent, AI model safety, and regulatory exposure.
 
 ---
 
-## 🔍 STRIDE Matrix Overview
+## STRIDE Matrix Overview
 
 | Threat Category | Description | Example in Healthcare AI | Mitigation |
 |------------------|-------------|---------------------------|------------|
@@ -19,7 +19,7 @@ This threat model aims to identify and structure key attack vectors in the conte
 
 ---
 
-## 🤖 AI-Specific Threat Extensions
+## AI-Specific Threat Extensions
 
 | AI Threat | Description | Example | Mitigation |
 |-----------|-------------|---------|------------|
@@ -30,7 +30,7 @@ This threat model aims to identify and structure key attack vectors in the conte
 
 ---
 
-## 🧠 Attack Tree: "Consent Manipulation & Exfiltration"
+## Attack Tree: "Consent Manipulation & Exfiltration"
 
 ```mermaid
 graph TD
@@ -43,7 +43,7 @@ E --> F[Regulatory Penalty: 20M€ Risk]
 
 ```
 
-## 📊 Risk Prioritization Table
+## Risk Prioritization Table
 
 | Threat                      | Likelihood | Impact | Risk Level | Detection Rule |
 |-----------------------------|------------|--------|------------|----------------|
@@ -54,32 +54,32 @@ E --> F[Regulatory Penalty: 20M€ Risk]
 
 ---
 
-## 🛡️ Mitigation Strategy Summary
+## Mitigation Strategy Summary
 
-### 🔐 Access Control
+### Access Control
 - Multi-Factor Authentication (MFA)
 - Role-Based Access Control (RBAC)
 - Least Privilege Principle
 - Session Monitoring & Logging
 
-### 🧾 Auditability & Evidence
+### Auditability & Evidence
 - Immutable audit logs
 - GDPR Art. 30 compliance (record of processing activities)
 - Timestamping and signed logs
 
-### 🤖 AI Resilience
+### AI Resilience
 - Adversarial input training and defense
 - Model drift monitoring and thresholds
 - Explainability tooling (e.g., SHAP, LIME)
 
-### 📜 Compliance Traceability
+### Compliance Traceability
 - Explicit mapping to GDPR Articles:
   - Art. 5 (Principles)
   - Art. 7 (Consent)
   - Art. 25 (Privacy by Design)
   - Art. 32 (Security of Processing)
 
-### ⚠️ SIEM Alerts
+### SIEM Alerts
 - Detection rules aligned with specific STRIDE threats
 - Mapped Use Cases:
   - UC-01: Non-EU Data Export
