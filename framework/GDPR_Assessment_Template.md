@@ -4,12 +4,12 @@ _Use this template to conduct and document a structured GDPR compliance assessme
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To ensure GDPR requirements are systematically reviewed, risks are identified, and mitigation actions are documented in an auditable, reusable format.
 
 ---
 
-## 📌 1️⃣ Project Overview
+## Project Overview
 
 - **Project Name:**  
 - **Assessment Date:**  
@@ -19,12 +19,12 @@ To ensure GDPR requirements are systematically reviewed, risks are identified, a
   - Describe what systems, data flows, or processes are in scope.
   - Define boundaries and exclusions.
 
-✅ *Instructions:*  
+*Instructions:*  
 Clearly outline what is being assessed to avoid scope creep.
 
 ---
 
-## 📌 2️⃣ Data Processing Activities
+## Data Processing Activities
 
 - **Purpose of Processing:**  
 - **Categories of Data:**  
@@ -38,26 +38,26 @@ Clearly outline what is being assessed to avoid scope creep.
   - Cloud Providers
   - Third Parties
 
-✅ *Instructions:*  
+*Instructions:*  
 Map out data journeys in detail. Include any cross-border transfers.
 
 ---
 
-## 📌 3️⃣ GDPR Article Mapping
+## GDPR Article Mapping
 
 | Data Field / Activity  | GDPR Article            | Requirement                          | Notes / Observations                |
 |-------------------------|-------------------------|--------------------------------------|-------------------------------------|
 |                         |                         |                                      |                                     |
 |                         |                         |                                      |                                     |
 
-✅ *Instructions:*  
+*Instructions:*  
 - Fill out this table with key data elements or processes.  
 - Link them to GDPR articles (Art. 5, 9, 25, 32, etc.).  
 - Document compliance measures and gaps.
 
 ---
 
-## 📌 4️⃣ Privacy by Design Checklist
+## Privacy by Design Checklist
 
 | Principle              | Audit Question                                                       | Status | Notes/Actions                           |
 |-------------------------|---------------------------------------------------------------------|--------|-----------------------------------------|
@@ -69,50 +69,50 @@ Map out data journeys in detail. Include any cross-border transfers.
 | Consent Management      | Is valid, documented consent in place?                              | [ ]    |                                         |
 | Logging & Monitoring    | Are access and processing logs maintained?                          | [ ]    |                                         |
 
-✅ *Instructions:*  
+*Instructions:*  
 Review each question during your assessment. Document compliance or needed improvements.
 
 ---
 
-## 📌 5️⃣ Findings Summary
+## Findings Summary
 
 | Finding                 | Risk Level (High/Med/Low) | GDPR Article | Recommended Action                 | Owner / Deadline   |
 |--------------------------|--------------------------|---------------|------------------------------------|---------------------|
 |                          |                          |               |                                    |                     |
 |                          |                          |               |                                    |                     |
 
-✅ *Instructions:*  
+*Instructions:*  
 - Summarize key issues.  
 - Assign risk levels and responsible owners.  
 - Set realistic mitigation timelines.
 
 ---
 
-## 📌 6️⃣ Recommendations
+##  Recommendations
 
 - Prioritized list of recommended actions.  
 - Quick wins vs. long-term projects.  
 - Technical and organizational measures.  
 - Suggested policy changes.
 
-✅ *Instructions:*  
+*Instructions:*  
 Be clear, actionable, and business-friendly.
 
 ---
 
-## 📌 7️⃣ Approval & Sign-off
+## Approval & Sign-off
 
 - **Assessor Name / Role:**  
 - **Date:**  
 - **Stakeholder Approver:**  
 - **Comments:**  
 
-✅ *Instructions:*  
+*Instructions:*  
 Secure stakeholder alignment and formal closure.
 
 ---
 
-## ✅ Outcome
+## Outcome
 A **structured, repeatable assessment** document:
 - Demonstrates GDPR compliance efforts.
 - Identifies and mitigates key risks.
