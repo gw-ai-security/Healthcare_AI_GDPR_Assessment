@@ -1,10 +1,10 @@
-# 🛡️ Security Architecture – Healthcare AI System
+# Security Architecture – Healthcare AI System
 
 This document outlines the technical and organizational security measures implemented in the Healthcare AI GDPR Dashboard. These measures follow principles of Privacy by Design (Art. 25 GDPR), Security of Processing (Art. 32), and industry best practices (ISO 27001, NIST CSF).
 
 ---
 
-## 🔐 Authentication & Access Control
+## Authentication & Access Control
 
 | Control           | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
@@ -14,7 +14,7 @@ This document outlines the technical and organizational security measures implem
 
 ---
 
-## 📋 Audit Logging & Monitoring
+## Audit Logging & Monitoring
 
 | Feature             | Description                                                             |
 |---------------------|-------------------------------------------------------------------------|
@@ -24,7 +24,7 @@ This document outlines the technical and organizational security measures implem
 
 ---
 
-## 🔒 Data Protection Measures
+## Data Protection Measures
 
 | Control             | Description                                                             |
 |---------------------|-------------------------------------------------------------------------|
@@ -35,7 +35,7 @@ This document outlines the technical and organizational security measures implem
 
 ---
 
-## ⚙️ System Architecture Highlights
+## System Architecture Highlights
 
 | Component        | Security Feature                                      |
 |------------------|--------------------------------------------------------|
@@ -46,7 +46,7 @@ This document outlines the technical and organizational security measures implem
 
 ---
 
-## ✅ Compliance Alignment
+## Compliance Alignment
 
 | Regulation        | Security Feature Alignment                          |
 |-------------------|------------------------------------------------------|
@@ -59,11 +59,11 @@ This document outlines the technical and organizational security measures implem
 
 ---
 
-## 🛠️ Future Improvements
+## Future Improvements
 
-- 🔐 Integration with enterprise IAM systems (e.g., Azure AD)
-- 📈 Real-time alerting dashboard (Streamlit + Kafka or similar)
-- 🧠 AI-powered anomaly detection (auto-tuning thresholds)
-- 📊 Visual access matrix per role / GDPR article
+- Integration with enterprise IAM systems (e.g., Azure AD)
+- Real-time alerting dashboard (Streamlit + Kafka or similar)
+- AI-powered anomaly detection (auto-tuning thresholds)
+- Visual access matrix per role / GDPR article
 
 
