@@ -4,12 +4,12 @@ _Use this template to design, document, and review security detection rules that
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To define clear, auditable detection rules for SIEM or log analysis that help identify potential GDPR compliance violations.
 
 ---
 
-## 📌 Detection Rule Summary
+## Detection Rule Summary
 
 - **Rule Name:**  
 - **Author:**  
@@ -18,13 +18,13 @@ To define clear, auditable detection rules for SIEM or log analysis that help id
   - What GDPR risk does this rule address?
   - Example: Detect transfers to non-EU countries without consent.
 
-✅ *Instructions:*  
+*Instructions:*  
 - Clearly describe the purpose of the rule.
 - Connect it to specific GDPR articles (e.g. Art. 5, 25, 32).
 
 ---
 
-## 📌 Rule Logic / Conditions
+## Rule Logic / Conditions
 
 - **Data Source:** (e.g. access logs, API calls)
 - **Fields Used:** (e.g. Country, ConsentStatus)
@@ -33,13 +33,13 @@ To define clear, auditable detection rules for SIEM or log analysis that help id
 - **Query Example:**  
   - Elastic DSL / SIEM Rule snippet
 
-✅ *Instructions:*  
+*Instructions:*  
 - Document technical logic in detail.
 - Include SIEM-ready queries if possible.
 
 ---
 
-## 📌 False Positive / Negative Analysis
+## False Positive / Negative Analysis
 
 | Risk Scenario                    | Likelihood | Impact | Notes / Mitigation             |
 |-----------------------------------|------------|--------|-------------------------------|
@@ -47,13 +47,13 @@ To define clear, auditable detection rules for SIEM or log analysis that help id
 | Delayed consent sync              | Medium     | Medium | Add time-based grace periods  |
 | IP geolocation inaccuracies       | High       | Medium | Regularly update IP mapping   |
 
-✅ *Instructions:*  
+*Instructions:*  
 - Think critically about how the rule could misfire.
 - Include mitigation plans.
 
 ---
 
-## 📌 Response / Alerting Plan
+## Response / Alerting Plan
 
 - **Severity Level:** (High/Medium/Low)
 - **Alert Destination:** (SIEM dashboard, email, ticketing system)
@@ -63,12 +63,12 @@ To define clear, auditable detection rules for SIEM or log analysis that help id
   - Validate consent records
   - Notify responsible owners
 
-✅ *Instructions:*  
+*Instructions:*  
 - Make sure teams know what to do when the rule triggers.
 
 ---
 
-## 📌 Testing & Validation
+## Testing & Validation
 
 - **Test Date:**  
 - **Tester:**  
@@ -77,24 +77,24 @@ To define clear, auditable detection rules for SIEM or log analysis that help id
 - **Result:**  
   - Passed / Issues found
 
-✅ *Instructions:*  
+*Instructions:*  
 - Ensure rules are tested before production deployment.
 
 ---
 
-## 📌 Version History
+## Version History
 
 | Version | Date       | Changes Made                   | Author            |
 |---------|------------|-------------------------------|-------------------|
 | 1.0     | YYYY-MM-DD | Initial creation               |                   |
 |         |            |                               |                   |
 
-✅ *Instructions:*  
+*Instructions:*  
 - Maintain an audit trail of rule changes.
 
 ---
 
-## ✅ Outcome
+## Outcome
 A **complete, auditable detection rule** that:
 - Supports GDPR compliance monitoring.
 - Integrates with SIEM or log analysis.
