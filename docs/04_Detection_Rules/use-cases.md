@@ -1,10 +1,10 @@
-# 📌 Healthcare AI SIEM Rulebook – Use Cases
+# Healthcare AI SIEM Rulebook – Use Cases
 
 This section documents the **detection use cases** prioritized for SIEM monitoring in Healthcare AI environments.
 
 ---
 
-## ✅ UC-01: Non-EU Data Export without Consent
+## UC-01: Non-EU Data Export without Consent
 
 - **Description:** Detects data exports to Non-EU destinations without documented patient consent.
 - **Severity:** High
@@ -19,7 +19,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 
 ---
 
-## ✅ UC-02: Access to Unencrypted Raw Data
+## UC-02: Access to Unencrypted Raw Data
 
 - **Description:** Detects access to storage locations without encryption at rest.
 - **Severity:** High
@@ -33,7 +33,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 
 ---
 
-## ✅ UC-03: AI Model Manipulation / Data Poisoning
+## UC-03: AI Model Manipulation / Data Poisoning
 
 - **Description:** Detects unusual data uploads that could poison AI training.
 - **Severity:** Medium
@@ -47,7 +47,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 
 ---
 
-## ✅ UC-04: Unauthorized Access to PHI
+## UC-04: Unauthorized Access to PHI
 
 - **Description:** Detects user accounts accessing Protected Health Information without proper RBAC authorization.
 - **Severity:** High
@@ -61,7 +61,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 
 ---
 
-## ✅ UC-05: Excessive Data Fields without Minimization
+## UC-05: Excessive Data Fields without Minimization
 
 - **Description:** Detects storage of unnecessary data fields violating data minimization principles.
 - **Severity:** High
@@ -75,7 +75,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 
 ---
 
-## ✅ UC-06: Consent Check Failures
+## UC-06: Consent Check Failures
 
 - **Description:** Detects transactions lacking consent verification step.
 - **Severity:** High
@@ -89,7 +89,7 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 
 ---
 
-## ✅ UC-07: Cloud Misconfiguration (Open Buckets)
+## UC-07: Cloud Misconfiguration (Open Buckets)
 
 - **Description:** Detects misconfigured cloud storage with public access.
 - **Severity:** Medium
@@ -103,5 +103,5 @@ This section documents the **detection use cases** prioritized for SIEM monitori
 
 ---
 
-*Version 1.1 – Georg Wiesmüller*
+
 
