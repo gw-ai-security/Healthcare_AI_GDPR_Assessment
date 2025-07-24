@@ -11,7 +11,7 @@ To ensure that the AI system is designed and operated not only to comply with GD
 
 ## Key Ethical AI Principles
 
-### 1️Transparency
+### Transparency
 - Explainability of AI decisions.
 - Ability to document and justify model outputs.
 - Avoidance of black-box systems in critical healthcare use cases.
@@ -22,7 +22,7 @@ To ensure that the AI system is designed and operated not only to comply with GD
 
 ---
 
-### 2️Fairness and Non-Discrimination
+### Fairness and Non-Discrimination
 - Avoid bias against protected groups.
 - Regularly audit training data and outputs for discrimination.
 - Implement bias mitigation strategies.
