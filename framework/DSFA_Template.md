@@ -4,12 +4,12 @@ _Use this template to conduct a structured Data Protection Impact Assessment (DP
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To identify and minimize data protection risks in high-risk processing activities, demonstrating compliance with GDPR’s Privacy by Design and Accountability principles.
 
 ---
 
-## 📌 1️⃣ Project Information
+## Project Information
 
 - **Project Name:**  
 - **Assessment Date:**  
@@ -19,12 +19,12 @@ To identify and minimize data protection risks in high-risk processing activitie
   - Systems or processes in scope
   - Exclusions
 
-✅ *Instructions:*  
+*Instructions:*  
 Clearly define what is included to avoid scope creep.
 
 ---
 
-## 📌 2️⃣ Description of Processing
+## Description of Processing
 
 - **Purpose of Processing:**  
 - **Categories of Data:**  
@@ -39,19 +39,19 @@ Clearly define what is included to avoid scope creep.
 - **Legal Basis:**  
   - Consent, contract, legal obligation, etc.
 
-✅ *Instructions:*  
+*Instructions:*  
 Document in detail to support transparency and accountability.
 
 ---
 
-## 📌 3️⃣ Necessity and Proportionality
+##Necessity and Proportionality
 
 - Is processing necessary for its purpose?  
 - Are there less intrusive alternatives?  
 - Have data minimization strategies been applied?  
 - Is purpose limitation enforced?  
 
-✅ *Checklist:*  
+*Checklist:*  
 - [ ] Documented purpose  
 - [ ] Minimal data collection  
 - [ ] Purpose limitation policies  
@@ -59,7 +59,7 @@ Document in detail to support transparency and accountability.
 
 ---
 
-## 📌 4️⃣ Risk Assessment Table
+## Risk Assessment Table
 
 | Risk Description       | Likelihood | Impact   | GDPR Penalty Potential | Risk Score (1-10) | Mitigation Measures                     |
 |--------------------------|------------|----------|------------------------|-------------------|-----------------------------------------|
@@ -67,14 +67,14 @@ Document in detail to support transparency and accountability.
 |                          |            |          |                        |                   |                                         |
 |                          |            |          |                        |                   |                                         |
 
-✅ *Instructions:*  
+*Instructions:*  
 - Identify specific risks (e.g. data leaks, missing consent).  
 - Assign scores based on likelihood and impact.  
 - Document mitigations.
 
 ---
 
-## 📌 5️⃣ Measures to Mitigate Risks
+## Measures to Mitigate Risks
 
 - Data encryption and pseudonymization  
 - Access controls and authentication  
@@ -83,23 +83,23 @@ Document in detail to support transparency and accountability.
 - Staff training and awareness  
 - Incident response plans
 
-✅ *Instructions:*  
+*Instructions:*  
 List specific planned or implemented measures.
 
 ---
 
-## 📌 6️⃣ Consultation with DPO
+## Consultation with DPO
 
 - **DPO Review Date:**  
 - **DPO Comments:**  
 - **Approval:**  
 
-✅ *Instructions:*  
+*Instructions:*  
 - Document formal DPO involvement, a GDPR Article 35 requirement.
 
 ---
 
-## 📌 7️⃣ Sign-off and Approvals
+## Sign-off and Approvals
 
 - **Assessor Name / Role:**  
 - **Date:**  
@@ -107,12 +107,12 @@ List specific planned or implemented measures.
 - **Date:**  
 - **Comments / Conditions:**  
 
-✅ *Instructions:*  
+*Instructions:*  
 Formal approval ensures accountability and audit readiness.
 
 ---
 
-## ✅ Outcome
+## Outcome
 A complete, auditable DPIA / DSFA document that:  
 - Identifies and evaluates privacy risks  
 - Documents mitigation measures  
