@@ -1,10 +1,10 @@
-# 📌 Technical and Organizational Measures
+# Technical and Organizational Measures
 
 This section documents the **key measures** that support GDPR, HIPAA, and EU AI Act compliance in Healthcare AI environments.
 
 ---
 
-## ✅ Access Controls
+## Access Controls
 
 - Role-Based Access Control (RBAC)
 - Multi-Factor Authentication (MFA)
@@ -17,7 +17,7 @@ This section documents the **key measures** that support GDPR, HIPAA, and EU AI 
 
 ---
 
-## ✅ Encryption and Secure Storage
+## Encryption and Secure Storage
 
 - Data-at-rest encryption
 - TLS for data-in-transit
@@ -29,7 +29,7 @@ This section documents the **key measures** that support GDPR, HIPAA, and EU AI 
 
 ---
 
-## ✅ Cloud Security Best Practices
+## Cloud Security Best Practices
 
 - Secure Cloud Storage configurations (e.g., AWS S3 Bucket Policies)
 - IAM Role separation
@@ -41,7 +41,7 @@ This section documents the **key measures** that support GDPR, HIPAA, and EU AI 
 
 ---
 
-## ✅ Data Minimization and Pseudonymization
+## Data Minimization and Pseudonymization
 
 - Store only required fields
 - Apply anonymization/pseudonymization where possible
@@ -53,7 +53,7 @@ This section documents the **key measures** that support GDPR, HIPAA, and EU AI 
 
 ---
 
-## ✅ Incident Response Planning
+## Incident Response Planning
 
 - Defined escalation paths
 - Forensic readiness
@@ -66,7 +66,7 @@ This section documents the **key measures** that support GDPR, HIPAA, and EU AI 
 
 ---
 
-## ✅ Organizational Policies
+## Organizational Policies
 
 - Regular staff training on data protection
 - Vendor management and assessments
@@ -79,7 +79,7 @@ This section documents the **key measures** that support GDPR, HIPAA, and EU AI 
 
 ---
 
-## ✅ Encryption Standards and Recommendations
+## Encryption Standards and Recommendations
 
 To ensure GDPR Article 32 compliance, encryption must be applied **at rest** and **in transit** using industry-standard algorithms.
 
@@ -97,38 +97,38 @@ To ensure GDPR Article 32 compliance, encryption must be applied **at rest** and
 - Log encryption failures or key access attempts
 - Monitor configurations for weak cipher suites
 
-## ✅ Pseudonymization and Anonymization Techniques
+## Pseudonymization and Anonymization Techniques
 
 Healthcare AI systems must protect patient identities through **pseudonymization** and **anonymization** methods.
 
 ---
 
-### ✅ Definitions
+### Definitions
 
 - **Pseudonymization:** Replacing identifiers with pseudonyms (reversible with key).
 - **Anonymization:** Irreversible transformation preventing identification.
 
 ---
 
-### ✅ Common Techniques
+### Common Techniques
 
-✅ **k-Anonymity:**
+**k-Anonymity:**
 - Generalize or suppress data to ensure each record is indistinguishable from at least k others.
 - Example: Replace exact age with age range.
 
-✅ **Differential Privacy:**
+**Differential Privacy:**
 - Adds mathematically calibrated noise to results.
 - Ensures individual contribution cannot be determined.
 
-✅ **Tokenization:**
+**Tokenization:**
 - Replace sensitive values with secure tokens stored in a vault.
 
-✅ **Hashing:**
+**Hashing:**
 - Use cryptographic hash functions (e.g. SHA-256) for irreversible pseudonyms.
 
 ---
 
-### ✅ Example Pseudocode (Python)
+### Example Pseudocode (Python)
 
 ```python
 def pseudonymize_id(patient_id, secret_key):
@@ -137,13 +137,13 @@ def pseudonymize_id(patient_id, secret_key):
 
 ```
 
-## ✅ Privacy by Design – Consent Check Example
+## Privacy by Design – Consent Check Example
 
 Ensuring **consent verification** before data processing is a core GDPR requirement (Articles 6, 9). Healthcare AI systems must enforce consent checks **by design**.
 
 ---
 
-### ✅ Concept
+### Concept
 
 - Consent must be explicit, documented, and verifiable.
 - Systems should block processing without valid consent.
@@ -151,7 +151,7 @@ Ensuring **consent verification** before data processing is a core GDPR requirem
 
 ---
 
-### ✅ Example Pseudocode (Python)
+### Example Pseudocode (Python)
 
 ```python
 def check_consent(patient_id, consent_registry):
@@ -166,6 +166,4 @@ def check_consent(patient_id, consent_registry):
 ```
 ---
 
-
-*Version 1.2 – Georg Wiesmüller*
 
