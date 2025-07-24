@@ -1,10 +1,10 @@
-# 📌 Regulatory Context
+# Regulatory Context
 
 This section explains the **regulatory frameworks** that define the requirements for this SIEM Rulebook for healthcare AI systems.
 
 ---
 
-## ✅ GDPR (General Data Protection Regulation)
+## GDPR (General Data Protection Regulation)
 
 The **GDPR** (EU Regulation 2016/679) applies to any processing of personal data in the EU, especially **special category data** such as health information (Article 9).
 
@@ -21,7 +21,7 @@ The **GDPR** (EU Regulation 2016/679) applies to any processing of personal data
 
 ---
 
-## ✅ EU AI Act (2024) – High-Risk Classification
+## EU AI Act (2024) – High-Risk Classification
 
 The **EU Artificial Intelligence Act (2024 Final)** explicitly classifies many Healthcare AI systems as **High-Risk** under Annex III. This includes:
 
@@ -46,7 +46,7 @@ The **EU Artificial Intelligence Act (2024 Final)** explicitly classifies many H
 
 ---
 
-## ✅ National Legislation – Germany Example
+## National Legislation – Germany Example
 
 In addition to the EU GDPR and AI Act, healthcare providers in Germany must comply with **national health data regulations**, such as:
 
@@ -66,7 +66,7 @@ In addition to the EU GDPR and AI Act, healthcare providers in Germany must comp
 
 ---
 
-## ✅ HIPAA (Health Insurance Portability and Accountability Act)
+## HIPAA (Health Insurance Portability and Accountability Act)
 
 **HIPAA** applies to US-based healthcare providers processing Protected Health Information (PHI).
 
@@ -82,7 +82,7 @@ In addition to the EU GDPR and AI Act, healthcare providers in Germany must comp
 
 ---
 
-## ✅ EHDS (European Health Data Space)
+## EHDS (European Health Data Space)
 
 The **EHDS** proposal (2022–2023) establishes a framework for health data sharing within the EU.
 
@@ -93,7 +93,7 @@ The **EHDS** proposal (2022–2023) establishes a framework for health data shar
 
 ---
 
-## ✅ How This Rulebook Supports Compliance
+## How This Rulebook Supports Compliance
 
 This Rulebook maps detection use cases to these regulatory requirements, ensuring:
 
