@@ -4,37 +4,37 @@ This document serves as a template for conducting a **Data Protection Impact Ass
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To identify, analyze, and mitigate privacy risks associated with processing sensitive health data via an AI system.
 
 ---
 
-## 📌 DPIA Sections
+## DPIA Sections
 
-### 1️⃣ Description of Processing
+### 1️Description of Processing
 - Purpose of the AI system
 - Categories of data processed (e.g. diagnosis codes, timestamps)
 - Data flows and storage locations
 - Transfers to non-EU countries
 
-✅ *Example:*  
+*Example:*  
 "AI system for radiology analysis processes patient diagnosis codes, user IDs, timestamps, and country data. Logs may be transferred to cloud storage, including non-EU locations."
 
 ---
 
-### 2️⃣ Necessity and Proportionality
+### 2️Necessity and Proportionality
 - Is data processing justified for its purpose?
 - Are there less intrusive alternatives?
 - Has Data Minimization been applied?
 
-✅ *Checklist:*  
+*Checklist:*  
 - [ ] Clear purpose documented  
 - [ ] Data fields reviewed for necessity  
 - [ ] Minimization strategies implemented
 
 ---
 
-### 3️⃣ Risk Assessment Table
+### 3️Risk Assessment Table
 
 | Risk Description       | Likelihood | Impact   | GDPR Penalty Potential | Risk Score (1-10) | Mitigation Measures                     |
 |-------------------------|------------|----------|------------------------|-------------------|-----------------------------------------|
@@ -46,7 +46,7 @@ To identify, analyze, and mitigate privacy risks associated with processing sens
 
 ---
 
-### 4️⃣ Measures to Mitigate Risks
+### 4️Measures to Mitigate Risks
 - Data encryption and pseudonymization
 - Strong access controls
 - Consent management workflows
@@ -55,19 +55,19 @@ To identify, analyze, and mitigate privacy risks associated with processing sens
 
 ---
 
-### 5️⃣ Consultation with DPO
+###  Consultation with DPO
 - Review DSFA with the Data Protection Officer
 - Ensure legal approval before deployment
 
 ---
 
-## ✅ Notes on Use
+## Notes on Use
 - Fill in all sections for your specific use case.
 - Review and update regularly.
 - Attach supporting documents as needed (Dataflow Diagram, Detection Rules, Policies).
 
 ---
 
-## 📌 Outcome
+## Outcome
 A complete, auditable DSFA document demonstrating GDPR Article 35 compliance and supporting Privacy by Design (Article 25) obligations.
 
