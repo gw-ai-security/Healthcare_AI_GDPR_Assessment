@@ -1,12 +1,12 @@
 
-# 🗂️ Audit & Operational Logs
+# Audit & Operational Logs
 
 This folder contains operational logs related to the GDPR compliance dashboard.  
 All log files are machine-generated and provide traceability for security audits, stakeholder access, and GDPR Article 30 documentation.
 
 ---
 
-## 📄 Included Files
+## Included Files
 
 | File              | Description                                        |
 |-------------------|----------------------------------------------------|
@@ -14,7 +14,7 @@ All log files are machine-generated and provide traceability for security audits
 
 ---
 
-## 🔐 Compliance Purpose
+## Compliance Purpose
 
 - Enables GDPR **Art. 30** traceability (record of processing activities)
 - Supports internal and external **auditors** by tracking who accessed what, when, and under which role
@@ -22,7 +22,7 @@ All log files are machine-generated and provide traceability for security audits
 
 ---
 
-## 🧠 Logging Format
+## Logging Format
 
 ```
 timestamp,user,role,view,action
@@ -31,7 +31,7 @@ timestamp,user,role,view,action
 
 ---
 
-## ⚠️ Best Practice
+## Best Practice
 
 - Do **not commit** real logs to public repositories  
 - Add `logs/*.csv` to `.gitignore` in production environments  
@@ -39,7 +39,7 @@ timestamp,user,role,view,action
 
 ---
 
-## ✅ How It's Used
+## How It's Used
 
 The log entries are written via the function:
 
