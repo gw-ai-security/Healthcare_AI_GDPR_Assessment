@@ -1,10 +1,10 @@
-# 📌 Healthcare-AI Challenges
+# Healthcare-AI Challenges
 
 This section describes the **specific security and compliance challenges** for SIEM monitoring in Healthcare AI environments.
 
 ---
 
-## ✅ Data Variety and Complexity
+## Data Variety and Complexity
 
 - Electronic Medical Records (EMR)
 - IoT Devices (Wearables, Remote Monitoring)
@@ -18,7 +18,7 @@ This section describes the **specific security and compliance challenges** for S
 
 ---
 
-## ✅ Sensitive Data Handling
+## Sensitive Data Handling
 
 - Health data = GDPR "special category data" (Article 9)
 - Need for explicit, documented consent
@@ -31,7 +31,7 @@ This section describes the **specific security and compliance challenges** for S
 
 ---
 
-## ✅ AI-Specific Attack Vectors
+## AI-Specific Attack Vectors
 
 - Adversarial Examples
 - Data Poisoning
@@ -45,7 +45,7 @@ This section describes the **specific security and compliance challenges** for S
 
 ---
 
-## ✅ Operational Challenges
+## Operational Challenges
 
 - Managed SOC providers may lack healthcare context
 - Shortage of specialized AI security skills
@@ -58,7 +58,7 @@ This section describes the **specific security and compliance challenges** for S
 
 ---
 
-## ✅ Compliance Requirements
+## Compliance Requirements
 
 - GDPR / EU AI Act High-Risk Classification
 - HIPAA for US providers
@@ -69,7 +69,5 @@ This section describes the **specific security and compliance challenges** for S
 - Demonstrate Privacy by Design
 - Enable cross-border compliance evidence
 
----
 
-*Version 1.0 – Georg Wiesmüller*
 
