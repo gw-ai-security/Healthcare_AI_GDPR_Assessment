@@ -1,4 +1,4 @@
-# 📌 Risk and Likelihood Matrix for Healthcare AI SIEM Use Cases
+# Risk and Likelihood Matrix for Healthcare AI SIEM Use Cases
 
 This matrix prioritizes detection use cases based on their **Risk Impact** and **Likelihood**, supporting risk-based SIEM design.
 
@@ -15,12 +15,12 @@ This matrix prioritizes detection use cases based on their **Risk Impact** and *
 
 ---
 
-## ✅ Legend
+## Legend
 - **Risk Impact:** Business / Legal consequences if undetected.
 - **Likelihood:** Probability of occurrence.
 - **Priority:** Combined rating for SIEM rule design focus.
 
 ---
 
-*Version 1.0 – Georg Wiesmüller*
+
 
