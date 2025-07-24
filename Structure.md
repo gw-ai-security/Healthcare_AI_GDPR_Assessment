@@ -15,7 +15,7 @@ All folders and files are interconnected to provide end-to-end **AI security ana
 | File | Purpose |
 |------|---------|
 | `README.md` | Project overview, objectives, architecture, usage instructions |
-| `FILES.md` | Describes every folder and file in this repo (you are reading it) |
+| `Structure.md` | Describes every folder and file in this repo (you are reading it) |
 | `LICENSE` | Repository usage rights (MIT License) |
 | `requirements.txt` | Python dependencies (Streamlit, pandas, etc.) |
 
