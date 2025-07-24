@@ -4,12 +4,12 @@ This document summarizes the key GDPR articles relevant to the Healthcare AI GDP
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To translate GDPR legal requirements into actionable, auditable checkpoints for AI system assessments in healthcare.
 
 ---
 
-## 📌 Key GDPR Articles
+## Key GDPR Articles
 
 ### Article 5 – Principles Relating to Processing
 - Lawfulness, fairness, transparency
@@ -20,7 +20,7 @@ To translate GDPR legal requirements into actionable, auditable checkpoints for 
 - Integrity and confidentiality
 - Accountability
 
-✅ *Impact:* All processing activities must be designed and documented to meet these principles.
+*Impact:* All processing activities must be designed and documented to meet these principles.
 
 ---
 
@@ -29,7 +29,7 @@ To translate GDPR legal requirements into actionable, auditable checkpoints for 
 - Processing must have a clear legal basis.
 - Additional safeguards are required.
 
-✅ *Impact:* Healthcare AI systems must verify consent and implement extra controls.
+*Impact:* Healthcare AI systems must verify consent and implement extra controls.
 
 ---
 
@@ -38,7 +38,7 @@ To translate GDPR legal requirements into actionable, auditable checkpoints for 
 - Minimize data collection and retention.
 - Enforce purpose limitation and access controls.
 
-✅ *Impact:* AI system architecture must demonstrate Privacy by Design compliance.
+*Impact:* AI system architecture must demonstrate Privacy by Design compliance.
 
 ---
 
@@ -47,11 +47,11 @@ To translate GDPR legal requirements into actionable, auditable checkpoints for 
 - Examples: Encryption, pseudonymization, access controls.
 - Ensure data integrity and availability.
 
-✅ *Impact:* Healthcare logs and data flows must be secure, auditable, and compliant.
+*Impact:* Healthcare logs and data flows must be secure, auditable, and compliant.
 
 ---
 
-## ✅ Practical Application in This Project
+##  Practical Application in This Project
 - Map AI system data fields to GDPR articles.
 - Build Privacy by Design checklists.
 - Identify potential GDPR violations in simulated logs.
