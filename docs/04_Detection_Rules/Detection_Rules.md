@@ -1,17 +1,17 @@
 
-# 🛡️ Detection Rules for GDPR Compliance Monitoring
+# 🛡Detection Rules for GDPR Compliance Monitoring
 
 This document defines example detection rules for monitoring and alerting on GDPR-relevant risks in Healthcare AI system logs.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 To help Security Architects, DPOs, and Compliance teams detect data processing events that may violate GDPR requirements, enabling timely investigation and mitigation.
 
 ---
 
-## 📌 Detection Rules Overview
+## Detection Rules Overview
 
 | ID     | Use Case                                  | Severity | GDPR Article | AI Act Mapping          |
 |--------|--------------------------------------------|----------|---------------|--------------------------|
@@ -23,7 +23,7 @@ To help Security Architects, DPOs, and Compliance teams detect data processing e
 
 ---
 
-## 🔎 UC-01: Non-EU Transfer Without Consent
+## UC-01: Non-EU Transfer Without Consent
 
 **Description:** Detects log events where data is transferred to a non-EU country without recorded consent.
 
@@ -41,9 +41,9 @@ To help Security Architects, DPOs, and Compliance teams detect data processing e
 }
 ```
 
-### 🛑 False Positive / False Negative Strategy
+### False Positive / False Negative Strategy
 
-#### ⚠️ False Positives
+#### False Positives
 
 | Scenario                                 | Description                                                            | Mitigation Strategy                                  |
 |------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------|
@@ -51,7 +51,7 @@ To help Security Architects, DPOs, and Compliance teams detect data processing e
 | Test/dev environments using mock data    | Simulated data triggers export logic                                  | Tag test systems in logs (e.g., `env=dev`)           |
 | Cloud/CDN proxy masking IP origin        | GeoIP misidentifies EU-based users due to reverse proxies             | Enrich logs with ASN info (e.g., MaxMind ASN fields) |
 
-#### ❌ False Negatives
+#### False Negatives
 
 | Scenario                                  | Description                                                   | Mitigation Strategy                                |
 |-------------------------------------------|---------------------------------------------------------------|----------------------------------------------------|
@@ -61,7 +61,7 @@ To help Security Architects, DPOs, and Compliance teams detect data processing e
 
 ---
 
-## 🔎 UC-02: Access to Raw Diagnostic Data
+## UC-02: Access to Raw Diagnostic Data
 
 **Description:** Detects unauthorized access to unmasked diagnostic data or unfiltered DICOM logs.
 
@@ -80,16 +80,16 @@ To help Security Architects, DPOs, and Compliance teams detect data processing e
 }
 ```
 
-### 🛑 False Positive / False Negative Strategy
+### False Positive / False Negative Strategy
 
-#### ⚠️ False Positives
+#### False Positives
 
 | Scenario            | Description                                            | Mitigation Strategy                          |
 |---------------------|--------------------------------------------------------|----------------------------------------------|
 | Data masking tool not yet applied | Timing mismatch causes unmasked logs         | Delay alert trigger by 5 mins post ingestion |
 | Legitimate read access by radiologist | Role misclassification                      | Role verification against HR IAM data        |
 
-#### ❌ False Negatives
+#### False Negatives
 
 | Scenario           | Description                          | Mitigation Strategy                      |
 |--------------------|--------------------------------------|------------------------------------------|
@@ -98,7 +98,7 @@ To help Security Architects, DPOs, and Compliance teams detect data processing e
 
 ---
 
-## 🔎 UC-03: Consent Flag Manipulation Pattern
+## UC-03: Consent Flag Manipulation Pattern
 
 **Description:** Detects patterns where users toggle consent status repeatedly before initiating exports.
 
@@ -108,16 +108,16 @@ IF user toggles `ConsentStatus` from true → false → true ≥ 3 times within 
 THEN alert
 ```
 
-### 🛑 False Positive / False Negative Strategy
+### False Positive / False Negative Strategy
 
-#### ⚠️ False Positives
+#### False Positives
 
 | Scenario      | Description                           | Mitigation Strategy                   |
 |---------------|---------------------------------------|---------------------------------------|
 | Mobile UI bug | Users unintentionally toggle rapidly  | UI logs validation                    |
 | Accessibility tech | Automated toggles                  | Tag accessibility client agents       |
 
-#### ❌ False Negatives
+#### False Negatives
 
 | Scenario      | Description                            | Mitigation Strategy                   |
 |---------------|----------------------------------------|---------------------------------------|
@@ -126,7 +126,7 @@ THEN alert
 
 ---
 
-## 🔎 UC-04: AI Model Behavior Drift / Manipulation
+## UC-04: AI Model Behavior Drift / Manipulation
 
 **Description:** Detects unexpected drift in AI model output characteristics that may signal tampering or adversarial influence.
 
@@ -137,7 +137,7 @@ THEN alert
 
 **Detection Logic:** Requires ML baseline drift detection pipeline (e.g. EvidentlyAI or custom scripts)
 
-### 🛑 False Positive / False Negative Strategy
+### False Positive / False Negative Strategy
 
 | Type | Scenario | Mitigation |
 |------|----------|------------|
@@ -146,7 +146,7 @@ THEN alert
 
 ---
 
-## 🔎 UC-05: Suspicious Admin Access After Hours
+## UC-05: Suspicious Admin Access After Hours
 
 **Description:** Detects admin access activity outside of business hours.
 
@@ -164,16 +164,16 @@ THEN alert
 }
 ```
 
-### 🛑 False Positive / False Negative Strategy
+### False Positive / False Negative Strategy
 
-#### ⚠️ False Positives
+#### False Positives
 
 | Scenario              | Description                             | Mitigation Strategy               |
 |-----------------------|-----------------------------------------|-----------------------------------|
 | On-call incident team | Legitimate emergency intervention       | Cross-check with incident ticket  |
 | Remote timezone access| Admin in other region (e.g. Asia team)  | Add timezone-normalized filter    |
 
-#### ❌ False Negatives
+#### False Negatives
 
 | Scenario               | Description                      | Mitigation Strategy               |
 |------------------------|----------------------------------|-----------------------------------|
@@ -182,6 +182,6 @@ THEN alert
 
 ---
 
-## 📌 Summary
+## Summary
 
 This rulebook outlines GDPR-relevant detection logic, including false positive/negative analysis and contextual mitigation strategies. Each rule connects legal compliance to operational alerting and can be adapted to enterprise SIEM environments like Elastic, Splunk, or Sentinel.
