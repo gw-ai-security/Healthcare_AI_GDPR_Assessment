@@ -44,7 +44,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 | UC-03       | Consent Flag Manipulation Pattern            | 3          | 3        | 9          | Medium      |
 | UC-04       | AI Model Drift or Manipulation Detection Gaps| 2          | 4        | 8          | Medium      |
 
-> Source: [DSFA Risk Matrix – Notebook Module 4](../notebooks/07_Modul4_DSFA_Risk_Matrix.ipynb)
+> Source: [DSFA Risk Matrix – Notebook Module 4](https://github.com/gw-ai-security/Healthcare_AI_GDPR_Assessment/blob/main/notebooks/07_DSFA_Risk_Matrix.ipynb))
 
 ---
 
