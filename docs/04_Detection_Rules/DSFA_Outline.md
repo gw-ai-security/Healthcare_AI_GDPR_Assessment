@@ -22,7 +22,7 @@ To identify, analyze, and mitigate privacy risks associated with processing sens
 
 ---
 
-### 2Necessity and Proportionality
+### Necessity and Proportionality
 - Is data processing justified for its purpose?
 - Are there less intrusive alternatives?
 - Has Data Minimization been applied?
