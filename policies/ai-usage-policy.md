@@ -17,21 +17,21 @@ To ensure that all AI systems used or developed by the organization uphold ethic
 
 ## Principles
 
-1**Transparency**
+1-**Transparency**
 - AI decisions must be explainable to users and stakeholders.
 
-2**Fairness**
+2-**Fairness**
 - Avoid bias and discrimination.
 - Regular audits of training data and model outputs.
 
-3**Privacy by Design**
+3-**Privacy by Design**
 - Minimize personal data use.
 - Implement data protection measures from the outset.
 
-4**Accountability**
+4-**Accountability**
 - Clear ownership for AI system performance, ethics, and compliance.
 
-5**Human Oversight**
+5-**Human Oversight**
 - Significant decisions must include human review.
 - No fully automated decisions with legal effects without safeguards (GDPR Art. 22).
 
