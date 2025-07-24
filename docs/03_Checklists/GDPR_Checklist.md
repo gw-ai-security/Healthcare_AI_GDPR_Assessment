@@ -4,12 +4,12 @@ This document provides an actionable checklist for ensuring GDPR compliance (par
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To translate GDPR principles into practical, auditable questions for AI system assessments.
 
 ---
 
-## ✅ GDPR Article Mapping – Detailed Audit Checklist
+## GDPR Article Mapping – Detailed Audit Checklist
 
 This checklist translates key GDPR Articles into **practical audit questions** for Healthcare AI systems.
 
@@ -24,14 +24,14 @@ This checklist translates key GDPR Articles into **practical audit questions** f
 
 ---
 
-✅ **Consulting Notes:**
+**Consulting Notes:**
 - This table can be used during client workshops to document compliance gaps.
 - Supports Privacy Impact Assessments (DPIA) and Data Protection Impact Analyses.
 - Maps directly to SIEM Use Cases and Detection Rules.
 
 ---
 
-## 📌 Checklist Table
+## Checklist Table
 
 | Principle              | Audit Question                                                       | Status | Notes/Actions                           |
 |-------------------------|---------------------------------------------------------------------|--------|-----------------------------------------|
@@ -48,14 +48,14 @@ This checklist translates key GDPR Articles into **practical audit questions** f
 
 ---
 
-## ✅ Notes on Use
+## Notes on Use
 - Each question should be reviewed during the assessment.
 - Status can be marked as [✔] compliant or [✖] non-compliant.
 - Notes/Actions column is for remediation planning.
 
 ---
 
-## 📌 Outcome
+## Outcome
 A completed, auditable checklist that:
 - Documents GDPR compliance status.
 - Identifies gaps and necessary mitigation actions.
