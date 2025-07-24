@@ -1,4 +1,4 @@
-# 📌 Healthcare AI Data Flow Diagram
+# Healthcare AI Data Flow Diagram
 
 This diagram illustrates the **data flow** in a typical Healthcare AI system.
 
@@ -15,7 +15,7 @@ flowchart TD
     External_Transfer --> External_APIs
 
 ```
-## ✅ Node Legend
+## Node Legend
 
 | Node              | Description                             |
 |--------------------|-----------------------------------------|
