@@ -4,12 +4,12 @@ _Use this template to document and analyze all key stakeholders involved in a GD
 
 ---
 
-## 🎯 Purpose
+## Purpose
 To ensure effective communication and alignment with all critical roles, balancing business, technical, legal, and clinical requirements.
 
 ---
 
-## 📌 Table of Stakeholders
+## Table of Stakeholders
 
 | Stakeholder           | Interest / Concerns            | Influence | Communication Strategy             | Deliverables                        |
 |-------------------------|-------------------------------|-----------|------------------------------------|-------------------------------------|
@@ -17,7 +17,7 @@ To ensure effective communication and alignment with all critical roles, balanci
 |                         |                               |           |                                    |                                     |
 |                         |                               |           |                                    |                                     |
 
-✅ *Instructions:*  
+*Instructions:*  
 - List all key roles (e.g. DPO, CISO, AI Product Manager, Security Architect, CMO).  
 - Clearly state their interest in the project.  
 - Rate their influence (High / Medium / Low).  
@@ -26,7 +26,7 @@ To ensure effective communication and alignment with all critical roles, balanci
 
 ---
 
-## 📌 Roles and Responsibilities
+## Roles and Responsibilities
 
 - **Data Protection Officer (DPO):**  
   - Reviews compliance documentation, ensures GDPR alignment.
@@ -43,13 +43,13 @@ To ensure effective communication and alignment with all critical roles, balanci
 - **CISO:**  
   - Owns overall risk and strategy.
 
-✅ *Instructions:*  
+*Instructions:*  
 - Fill in specific names, titles, contact details if needed.
 - Customize to your client’s org chart.
 
 ---
 
-## 📌 Communication Plan
+## Communication Plan
 
 | Frequency | Format  | Audience             | Owner           |
 |-----------|---------|----------------------|------------------|
@@ -57,7 +57,7 @@ To ensure effective communication and alignment with all critical roles, balanci
 | Bi-weekly | Meeting | Security & Compliance| Security Lead    |
 | Monthly   | Report  | Executive Stakeholders | Consultant     |
 
-✅ *Instructions:*  
+*Instructions:*  
 - Define how often you communicate.
 - Choose the right format (email, meeting, report).
 - Identify who needs what level of detail.
@@ -65,7 +65,7 @@ To ensure effective communication and alignment with all critical roles, balanci
 
 ---
 
-## ✅ Outcome
+## Outcome
 A **clear, auditable stakeholder plan** that:  
 - Defines responsibilities  
 - Avoids communication gaps  
