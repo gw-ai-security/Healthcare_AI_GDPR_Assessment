@@ -1,6 +1,6 @@
-# 📎 Audit Report – Healthcare AI GDPR & Compliance Assessment
+# Audit Report – Healthcare AI GDPR & Compliance Assessment
 
-## 🧠 Executive Summary
+## Executive Summary
 
 This audit assesses the GDPR and EU AI Act compliance posture of a simulated Healthcare AI system used across radiology, wearables, and telemedicine contexts. It evaluates data privacy risks, high-risk AI classification, and security measures, with a focus on real-world detection use cases.
 
@@ -8,7 +8,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-## 📋 Audit Scope
+## Audit Scope
 
 - **Industry**: Healthcare (Radiology, Telemedicine, IoT Devices)
 - **Systems**: AI diagnosis pipeline, consent APIs, cloud-based storage, role-based access control
@@ -22,7 +22,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-## 🚨 Top 5 Findings
+## Top 5 Findings
 
 | # | Description                                                         | Risk Level | GDPR Article |
 |---|----------------------------------------------------------------------|------------|---------------|
@@ -34,7 +34,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-## 📊 Risk Score Matrix (DSFA)
+## Risk Score Matrix (DSFA)
 
 | Use Case ID | Use Case Description                          | Likelihood | Severity | Risk Score | Risk Level |
 |-------------|-----------------------------------------------|------------|----------|------------|-------------|
@@ -48,7 +48,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-## 🛡️ Key Technical & Organizational Measures (TOMs)
+## Key Technical & Organizational Measures (TOMs)
 
 - AES-256 encryption for data at rest  
 - TLS 1.3 for secure data in transit  
@@ -61,7 +61,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-## 🎯 Recommendations
+## Recommendations
 
 1. **Enforce GeoIP-based export filtering** for all outbound traffic when consent is not verifiably set to `true`.
 2. **Implement anomaly detection** and AI monitoring frameworks (e.g. Evidently, Alibi Detect).
@@ -71,7 +71,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-## 📎 Appendix
+## Appendix
 
 - [Business Use Case](../00_Use_Case/Business_Use_Case.md)
 - [Stakeholder Map](../00_Use_Case/Stakeholder_Analysis.md)
@@ -83,7 +83,7 @@ The assessed system qualifies as a **high-risk AI system** under the EU AI Act a
 
 ---
 
-## ✅ Audit Conclusion & Compliance Outlook
+##  Audit Conclusion & Compliance Outlook
 
 | Framework   | Status        | Observations                                 |
 |-------------|---------------|----------------------------------------------|
