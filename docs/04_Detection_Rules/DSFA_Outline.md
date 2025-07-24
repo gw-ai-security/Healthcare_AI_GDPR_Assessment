@@ -11,7 +11,7 @@ To identify, analyze, and mitigate privacy risks associated with processing sens
 
 ## DPIA Sections
 
-### 1️Description of Processing
+### Description of Processing
 - Purpose of the AI system
 - Categories of data processed (e.g. diagnosis codes, timestamps)
 - Data flows and storage locations
@@ -22,7 +22,7 @@ To identify, analyze, and mitigate privacy risks associated with processing sens
 
 ---
 
-### 2️Necessity and Proportionality
+### 2Necessity and Proportionality
 - Is data processing justified for its purpose?
 - Are there less intrusive alternatives?
 - Has Data Minimization been applied?
@@ -34,7 +34,7 @@ To identify, analyze, and mitigate privacy risks associated with processing sens
 
 ---
 
-### 3️Risk Assessment Table
+### Risk Assessment Table
 
 | Risk Description       | Likelihood | Impact   | GDPR Penalty Potential | Risk Score (1-10) | Mitigation Measures                     |
 |-------------------------|------------|----------|------------------------|-------------------|-----------------------------------------|
@@ -46,7 +46,7 @@ To identify, analyze, and mitigate privacy risks associated with processing sens
 
 ---
 
-### 4️Measures to Mitigate Risks
+### Measures to Mitigate Risks
 - Data encryption and pseudonymization
 - Strong access controls
 - Consent management workflows
